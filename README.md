@@ -4,7 +4,7 @@
 
 - I plan on making tutorial based repos here to help learn the topics better and to help others do the same.  The main topics I plan on focusing on are programming in general, programming languages, AI, and math.  I also plan on having some actual programs.
 
-- The main programming languages I am interested in are: Python, Swift, and C.
+- The main programming languages I am interested in are: Python, Swift, C, and SQL.
 
 <!--
 **RyanS974/RyanS974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
