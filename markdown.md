@@ -38,15 +38,15 @@ This is a basic tutorial of markdown.
 
 To create a formatted code block, surround the text with backticks.
 
-'a = 1
-b = 2'
+`a = 1
+b = 2`
 
-'a = 1'
+`a = 1`
 
-'''
+```
 /# This is a basic variable definition
 a = 1
-'''
+```
 
 ## Lists
 
