@@ -37,9 +37,9 @@ This is a basic tutorial of markdown.
 
 ### Code
 
-To create a formatted code block, surround the text with backticks.
+To create a formatted code block, surround the text with backticks:
 
-\`a = 1`
+    \`a = 1`
 
 The above will display as:
 
