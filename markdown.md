@@ -1,4 +1,5 @@
 <!-- basic tuturial on markdown -->
+# EARLY STAGE DRAFT VERSION
 
 # Markdown
 
@@ -38,13 +39,14 @@ This is a basic tutorial of markdown.
 
 To create a formatted code block, surround the text with backticks.
 
-`a = 1
-b = 2`
+``a = 1``
+
+The above will display as:
 
 `a = 1`
 
 ```
-/# This is a basic variable definition
+# This is a basic variable definition
 a = 1
 ```
 
