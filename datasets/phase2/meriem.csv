@@ -1,0 +1,1001 @@
+id,skills,exp,grades,projects,extra,offer,hire,pay
+1,Python;Data Analysis;SQL,3,75.26,9,0,1,No,None
+2,Java,4,74.25,6,2,1,No,None
+3,Data Analysis,2,74.89,4,3,0,No,None
+4,Data Analysis,4,72.73,2,3,1,No,None
+5,Machine Learning;Python;C++,4,84.85,1,4,0,Interview,None
+6,Python,1,66.57,7,3,1,No,None
+7,Java,2,93.84,1,3,0,No,None
+8,Machine Learning,2,92.5,7,2,0,No,None
+9,Python;Machine Learning;Java,2,79.06,4,1,0,Interview,None
+10,Data Analysis;Machine Learning;C++,4,94.11,8,3,1,No,None
+11,C++,3,69.89,3,1,0,No,None
+12,SQL;Python;Java,2,60.7,7,0,0,No,None
+13,C++;SQL;Machine Learning,5,84.77,6,3,0,No,None
+14,Java,4,78.32,7,0,0,No,None
+15,Python;Data Analysis,1,82.69,4,0,1,No,None
+16,Python;SQL,3,95.97,1,4,1,No,None
+17,Machine Learning;SQL,5,98.8,6,1,0,No,None
+18,Data Analysis,5,85.38,2,1,1,No,None
+19,Machine Learning;Python,1,90.56,9,4,1,Interview,None
+20,Python;Machine Learning,3,63.35,9,2,0,No,None
+21,Data Analysis;Machine Learning,4,66.43,9,4,0,No,None
+22,Machine Learning;Java,0,89.33,9,4,1,No,None
+23,Python;Data Analysis;Java,3,77.25,1,4,1,No,None
+24,Python;Java,1,77.84,2,0,1,No,None
+25,C++,5,72.34,3,1,1,No,None
+26,C++;SQL,4,84.29,9,2,1,No,None
+27,SQL,3,67.41,6,3,1,No,None
+28,Java;SQL,0,85.08,9,3,0,No,None
+29,Data Analysis;Python;Java,0,66.95,0,3,1,No,None
+30,Data Analysis;Java;Machine Learning,2,62.55,5,2,0,No,None
+31,C++;SQL,2,73.21,5,3,0,No,None
+32,Data Analysis;Machine Learning;Java,1,69.25,7,2,1,No,None
+33,SQL;Python;Java,3,95.56,1,3,1,No,None
+34,SQL,3,62.2,1,3,0,No,None
+35,SQL;Python,5,67.06,0,2,1,No,None
+36,Machine Learning,5,81.95,2,1,1,No,None
+37,SQL;Java;C++,5,79.24,6,2,0,No,None
+38,Data Analysis;C++,2,61.83,7,2,1,No,None
+39,SQL,3,60.29,6,4,0,No,None
+40,Java,3,99.52,8,0,0,No,None
+41,Machine Learning;Data Analysis;SQL,0,86.35,7,0,1,No,None
+42,Machine Learning;C++;Data Analysis,2,74.62,7,1,0,No,None
+43,Java;Data Analysis,4,78.82,1,1,0,No,None
+44,C++;Python;Machine Learning,2,70.66,0,1,0,No,None
+45,Java,4,73.79,5,0,1,No,None
+46,Java;C++;Python,0,85.96,6,1,1,No,None
+47,C++;Machine Learning,1,95.31,5,1,1,No,None
+48,Machine Learning;SQL,3,67.37,6,2,1,No,None
+49,Python;Data Analysis;SQL,0,93.61,7,2,0,No,None
+50,SQL;Python;Data Analysis,3,64.86,1,0,0,No,None
+51,Java;C++,5,68.6,0,2,1,No,None
+52,Data Analysis,1,61.49,9,1,0,No,None
+53,SQL;Machine Learning;Java,1,65.63,7,2,0,No,None
+54,Python;SQL;Java,0,96.69,7,4,1,No,None
+55,SQL,1,78.38,7,2,1,No,None
+56,Machine Learning,4,63.11,9,0,1,No,None
+57,Python;Machine Learning;SQL,1,98.39,6,1,0,Interview,None
+58,Python;Data Analysis,3,95.16,1,1,1,No,None
+59,SQL;Java,3,90.19,3,0,1,No,None
+60,Java,3,97.34,8,2,0,No,None
+61,Python;Data Analysis;C++,3,68.81,7,1,1,No,None
+62,Machine Learning,4,93.45,3,1,1,No,None
+63,Java,2,87.6,7,4,0,No,None
+64,C++;Machine Learning;Java,5,94.79,9,0,1,No,None
+65,Machine Learning;Data Analysis,0,91.88,5,2,1,No,None
+66,Java;Machine Learning,3,73.86,8,2,0,No,None
+67,Data Analysis;Java;SQL,1,90.98,0,1,1,No,None
+68,Data Analysis;SQL,3,70.5,5,3,1,No,None
+69,Machine Learning;C++,1,73.14,3,4,0,No,None
+70,Java,5,64.32,2,4,0,No,None
+71,Python,5,97.4,4,4,1,No,None
+72,Python;Machine Learning,5,71.64,9,1,0,No,None
+73,Java;Machine Learning;Data Analysis,1,80.82,7,0,0,No,None
+74,Python,3,75.65,9,0,1,No,None
+75,Data Analysis;Python;Java,5,98.4,5,4,0,No,None
+76,Python,4,73.4,0,3,1,No,None
+77,Python;Machine Learning,1,91.14,5,3,1,Interview,None
+78,SQL,1,94.22,6,2,0,No,None
+79,C++;Java;Machine Learning,3,77.42,5,3,0,No,None
+80,Machine Learning;Data Analysis;C++,1,75.13,2,4,0,No,None
+81,C++,1,89.91,8,2,1,No,None
+82,Java;Python,5,96.52,9,4,0,No,None
+83,Data Analysis,3,90.2,9,0,1,No,None
+84,SQL;C++,5,69.09,3,4,0,No,None
+85,C++;Python,5,95.53,4,2,1,No,None
+86,Data Analysis;Python;Machine Learning,3,75.5,4,4,1,Yes,125
+87,Data Analysis;SQL,0,83.05,2,1,0,No,None
+88,Java,5,93.26,1,2,1,No,None
+89,Java,4,67.54,7,3,1,No,None
+90,C++;Java;Data Analysis,4,91.38,6,0,1,No,None
+91,SQL,1,83.85,4,3,0,No,None
+92,Java;Python,4,95.73,0,4,0,No,None
+93,Machine Learning;Python,1,66.88,9,3,0,No,None
+94,Data Analysis,0,76.83,0,2,0,No,None
+95,Python;Data Analysis;Java,3,93.31,7,1,0,No,None
+96,C++,3,60.77,3,3,0,No,None
+97,C++;Java,3,64.49,3,4,0,No,None
+98,Python;Java,4,99.62,8,3,1,No,None
+99,Python;C++,0,71.22,1,3,1,No,None
+100,C++;SQL,4,99.02,4,2,0,No,None
+101,Data Analysis;Machine Learning,4,67.3,5,4,1,No,None
+102,Data Analysis;C++;Java,0,74.44,5,4,0,No,None
+103,SQL,0,90.11,9,1,1,No,None
+104,Python,0,86.31,2,2,0,No,None
+105,Data Analysis;Machine Learning;Python,0,83.24,9,2,1,Interview,None
+106,SQL;Python;Machine Learning,3,81.2,5,0,1,Yes,150
+107,C++;Machine Learning;Java,2,93.74,9,1,1,No,None
+108,Machine Learning,2,69.4,9,1,0,No,None
+109,Java,0,77.7,4,4,0,No,None
+110,Machine Learning,2,66.22,7,4,1,No,None
+111,Data Analysis,2,83.84,3,1,1,No,None
+112,C++,0,70.02,9,2,1,No,None
+113,Machine Learning,2,73.35,9,0,0,No,None
+114,Machine Learning,4,78.85,2,4,0,No,None
+115,Python;Machine Learning;Data Analysis,1,61.07,5,0,0,No,None
+116,Data Analysis;Machine Learning,1,63.68,9,1,0,No,None
+117,Machine Learning;SQL;Data Analysis,0,87.44,8,2,1,No,None
+118,Data Analysis,3,77.16,7,0,0,No,None
+119,SQL;Java;Data Analysis,0,94.59,9,3,1,No,None
+120,Java;SQL,3,87.79,7,1,1,No,None
+121,SQL;Python,1,60.32,2,2,0,No,None
+122,C++,0,84.67,0,1,0,No,None
+123,Machine Learning;Python;Data Analysis,5,63.75,2,1,0,No,None
+124,Java;Machine Learning;SQL,4,91.24,2,0,0,No,None
+125,SQL,2,99.66,5,0,0,No,None
+126,Java,3,81.25,2,3,1,No,None
+127,SQL;Java,5,87.31,1,4,1,No,None
+128,Machine Learning;SQL,2,69.49,8,3,0,No,None
+129,Data Analysis;Machine Learning;Python,2,77.5,5,2,1,Interview,None
+130,Machine Learning;SQL;Python,0,94.24,4,2,1,Interview,None
+131,SQL,2,66.7,2,1,0,No,None
+132,Python,4,70.62,6,0,1,No,None
+133,Machine Learning;Java;SQL,5,77.82,6,1,1,No,None
+134,Machine Learning;Java,2,88.49,3,4,1,No,None
+135,SQL;Java;Data Analysis,0,75.04,9,1,0,No,None
+136,C++;SQL;Python,4,97.11,1,2,0,No,None
+137,Data Analysis,1,63.78,1,2,1,No,None
+138,SQL;Python,5,74.83,7,3,0,No,None
+139,SQL,2,88.36,3,1,1,No,None
+140,Data Analysis,0,69.04,6,0,1,No,None
+141,Java;C++,1,86.26,2,4,0,No,None
+142,Data Analysis;C++;Python,1,66.57,8,4,0,No,None
+143,Python,3,62.24,9,0,0,No,None
+144,Java;Machine Learning;Python,4,64.84,8,4,1,No,None
+145,Machine Learning;Data Analysis,2,97.2,6,0,0,No,None
+146,C++,0,82.07,6,0,1,No,None
+147,Python,3,91.85,0,3,0,No,None
+148,SQL;Python,4,73.31,9,1,0,No,None
+149,Java;Data Analysis,3,83.71,7,2,0,No,None
+150,Python;SQL;C++,5,79.8,1,2,0,No,None
+151,Data Analysis;Java;Machine Learning,4,97.83,7,1,1,No,None
+152,Java,4,89.9,1,4,0,No,None
+153,Python;Java,2,89.22,0,0,1,No,None
+154,SQL;C++;Java,4,61.85,7,2,1,No,None
+155,Java;Python,3,81.99,3,3,0,No,None
+156,Python;C++,4,78.68,9,4,1,No,None
+157,Java,2,97.11,5,3,1,No,None
+158,SQL;Data Analysis,2,70.29,9,2,1,No,None
+159,Java,5,70.79,9,1,0,No,None
+160,Data Analysis,3,76.45,0,1,0,No,None
+161,C++,1,69.73,8,3,0,No,None
+162,SQL;Python,1,65.17,6,4,0,No,None
+163,SQL;Machine Learning,4,94.3,4,2,1,No,None
+164,Data Analysis;Machine Learning,5,82.33,5,0,1,No,None
+165,Python;Data Analysis,0,94.45,2,1,0,No,None
+166,Java;Machine Learning,4,93.25,8,3,1,No,None
+167,Python;Data Analysis,5,71.28,1,2,1,No,None
+168,C++;SQL;Machine Learning,3,81.91,9,4,1,No,None
+169,Machine Learning;Data Analysis,3,63.33,0,0,0,No,None
+170,C++,3,96.61,0,0,1,No,None
+171,Java;SQL;Python,3,76.17,9,1,0,No,None
+172,C++;Python;Java,3,75.75,1,0,0,No,None
+173,C++;Python,5,72.11,5,2,1,No,None
+174,SQL;Machine Learning;Data Analysis,5,78.43,5,1,1,No,None
+175,Python;SQL;Machine Learning,2,70.07,8,1,1,No,None
+176,C++;SQL;Data Analysis,1,74.99,9,1,1,No,None
+177,SQL;Machine Learning;Java,3,92,3,2,1,No,None
+178,C++,0,93.37,7,3,0,No,None
+179,C++;Java;SQL,5,72.17,3,0,0,No,None
+180,Machine Learning;Python,0,78.76,2,0,1,Interview,None
+181,SQL;Java,0,94.95,3,3,0,No,None
+182,Machine Learning;Data Analysis,0,62.11,0,1,0,No,None
+183,SQL;C++;Machine Learning,2,95.57,8,4,0,No,None
+184,Data Analysis;Java,5,68.77,4,2,1,No,None
+185,C++;Java;Python,0,87.14,6,1,1,No,None
+186,Machine Learning;Data Analysis,3,83.3,2,1,0,No,None
+187,Python;Java,4,82.12,4,1,1,No,None
+188,SQL;Java;Machine Learning,0,94.37,9,0,0,No,None
+189,Python,2,64.06,3,0,0,No,None
+190,Java,5,73.88,6,4,1,No,None
+191,Machine Learning;Python,2,81.53,4,2,1,Interview,None
+192,C++;Machine Learning,0,92.45,1,1,0,No,None
+193,Data Analysis,5,68.66,2,0,0,No,None
+194,C++;Data Analysis;Machine Learning,4,92.12,7,3,1,No,None
+195,Java,0,75.99,2,0,1,No,None
+196,Data Analysis;Python;Machine Learning,2,67.56,6,1,0,No,None
+197,Java;Data Analysis,1,90.36,4,1,1,No,None
+198,Machine Learning;C++;Python,3,63.64,6,0,1,No,None
+199,Java;Python;C++,2,80.59,9,3,1,No,None
+200,C++,5,62.56,8,3,0,No,None
+201,Machine Learning;Data Analysis;SQL,0,74.26,6,1,1,No,None
+202,Machine Learning;Data Analysis,3,84.04,5,0,0,No,None
+203,Machine Learning;C++,0,82.24,0,2,1,No,None
+204,Data Analysis,5,76.19,3,2,0,No,None
+205,C++;SQL,0,77.16,7,1,0,No,None
+206,Data Analysis,1,69.07,0,3,0,No,None
+207,Machine Learning;C++,3,78.24,5,2,1,No,None
+208,Java;SQL;C++,3,98.13,1,0,0,No,None
+209,Data Analysis,5,94.02,8,4,1,No,None
+210,Java;SQL,1,65.81,7,4,0,No,None
+211,SQL;Machine Learning,2,61.19,8,3,0,No,None
+212,Java,0,97.34,8,4,0,No,None
+213,Java,4,81.07,1,0,0,No,None
+214,Data Analysis;Java,0,81.51,1,1,0,No,None
+215,Java;Python;C++,0,91.23,8,1,1,No,None
+216,SQL;Machine Learning,2,72.59,1,0,1,No,None
+217,C++;Python,0,79.28,3,1,0,No,None
+218,C++,1,98.75,1,0,1,No,None
+219,Machine Learning;Python,1,86.89,0,0,0,Interview,None
+220,C++;Data Analysis;Python,3,66.15,9,4,1,No,None
+221,SQL;C++,5,65.33,6,4,0,No,None
+222,Machine Learning;Data Analysis,4,68.17,4,3,1,No,None
+223,Java;C++;Data Analysis,0,90.67,2,4,1,No,None
+224,C++;Data Analysis,0,71.82,7,1,1,No,None
+225,C++,2,60.86,4,4,0,No,None
+226,Data Analysis;C++,5,97.77,0,0,1,No,None
+227,Java;C++;Data Analysis,1,66.79,8,4,1,No,None
+228,Machine Learning;Python;C++,4,60.38,4,1,0,No,None
+229,Machine Learning;Python;Data Analysis,3,69.49,2,3,1,No,None
+230,C++;Java;Data Analysis,1,69.4,5,2,0,No,None
+231,Python,5,76.88,7,0,1,No,None
+232,C++;SQL,3,96.82,1,1,0,No,None
+233,C++,2,95.17,2,1,0,No,None
+234,SQL;C++,2,78.28,6,2,0,No,None
+235,C++;SQL,0,76.44,1,3,0,No,None
+236,C++,5,82.2,4,0,0,No,None
+237,Data Analysis,4,69.74,8,3,0,No,None
+238,Python;SQL;Java,3,62.09,6,2,0,No,None
+239,Python;Data Analysis;Machine Learning,1,97.57,2,0,0,Interview,None
+240,Java,5,67.47,1,4,1,No,None
+241,Machine Learning,5,67.94,9,3,1,No,None
+242,Java,2,78.9,8,4,1,No,None
+243,C++,0,79.66,8,0,1,No,None
+244,Python;Machine Learning;Java,0,60.74,8,2,0,No,None
+245,Data Analysis;SQL,3,65.92,9,4,1,No,None
+246,Java;Machine Learning,2,75.13,2,4,0,No,None
+247,Data Analysis;Python;Java,5,87.35,0,1,1,No,None
+248,Python;Machine Learning,4,69.14,8,0,0,No,None
+249,SQL,2,76.92,6,2,0,No,None
+250,Data Analysis;C++;Machine Learning,3,82.29,1,1,1,No,None
+251,Java;Python;Data Analysis,3,95.54,5,3,0,No,None
+252,Data Analysis,2,73.04,8,2,0,No,None
+253,Data Analysis;Machine Learning,3,65.34,7,1,0,No,None
+254,Machine Learning,2,79.57,5,3,1,No,None
+255,SQL,1,89.87,5,2,1,No,None
+256,C++;SQL;Python,2,64.39,7,1,1,No,None
+257,Data Analysis;SQL;Python,2,76.99,8,2,1,No,None
+258,C++;Python,3,60.71,7,4,1,No,None
+259,SQL;C++,3,61.34,0,1,1,No,None
+260,Java;C++;Data Analysis,0,79.32,1,4,0,No,None
+261,Machine Learning;SQL;C++,0,71.93,5,1,1,No,None
+262,C++;Machine Learning,1,93.8,7,4,1,No,None
+263,SQL;Java,0,84.09,3,0,1,No,None
+264,SQL,2,78.16,3,4,0,No,None
+265,Java;C++,3,76.32,1,0,1,No,None
+266,Machine Learning;C++;SQL,0,79.89,9,2,0,No,None
+267,C++,0,61.62,0,3,0,No,None
+268,Java;C++,1,95.71,9,3,0,No,None
+269,SQL,5,99.93,8,3,0,No,None
+270,SQL;Data Analysis,1,67.26,6,0,1,No,None
+271,Data Analysis;SQL;Python,2,64.82,8,3,1,No,None
+272,Java;Python;Data Analysis,3,65.74,1,3,1,No,None
+273,C++;Data Analysis;Java,1,86.44,9,4,0,No,None
+274,C++;Data Analysis;Machine Learning,0,86.46,4,3,0,No,None
+275,Python,3,93.92,1,0,0,No,None
+276,Java;C++,3,90.07,9,4,1,No,None
+277,Java;SQL;Machine Learning,0,77.99,6,0,0,No,None
+278,Machine Learning;Data Analysis,1,84.51,8,1,1,No,None
+279,C++;Machine Learning,0,87.53,2,3,0,No,None
+280,SQL;C++,5,80.51,0,0,1,No,None
+281,SQL;Data Analysis,3,79.03,3,0,1,No,None
+282,Python,4,85.8,3,4,0,No,None
+283,Java;SQL;Python,4,82.3,5,1,1,No,None
+284,Machine Learning;Java;Data Analysis,2,85.76,4,1,0,No,None
+285,Data Analysis,0,84.51,4,3,1,No,None
+286,SQL;Machine Learning,0,88.77,8,2,1,No,None
+287,Machine Learning;SQL;Python,2,85.71,0,2,0,Interview,None
+288,SQL,2,80.79,7,4,0,No,None
+289,SQL,2,87.27,7,3,1,No,None
+290,SQL,3,77.98,7,4,0,No,None
+291,Data Analysis,5,69.67,2,3,1,No,None
+292,Java;SQL;Python,0,60.06,9,1,1,No,None
+293,Machine Learning,3,82.4,7,2,1,No,None
+294,Data Analysis;Java,2,83.63,1,0,1,No,None
+295,C++;Python;Machine Learning,0,98.88,7,2,1,Interview,None
+296,SQL;C++;Machine Learning,3,74.46,7,3,1,No,None
+297,SQL;Java,5,75.77,2,2,0,No,None
+298,SQL,3,68.07,3,0,0,No,None
+299,Python;Data Analysis,5,62.82,8,1,1,No,None
+300,C++;Python,2,90.91,8,1,0,No,None
+301,Data Analysis;Python;Java,5,69.99,9,3,1,No,None
+302,Machine Learning,0,84.36,8,2,1,No,None
+303,Python;Java,2,87.51,9,3,0,No,None
+304,Machine Learning,0,78.85,5,2,0,No,None
+305,Machine Learning;Data Analysis,4,95.05,0,4,0,No,None
+306,Java;Machine Learning;C++,1,77.75,7,3,0,No,None
+307,C++;SQL,5,71.4,8,2,0,No,None
+308,C++;SQL;Python,1,95.84,7,4,1,No,None
+309,Data Analysis;Python;Java,1,94.46,0,3,1,No,None
+310,Java;SQL;Python,5,66.56,5,1,0,No,None
+311,Java,2,61.04,8,4,0,No,None
+312,Machine Learning,4,63.6,8,3,0,No,None
+313,Java,0,71.46,6,0,0,No,None
+314,C++,3,98.89,6,1,1,No,None
+315,Data Analysis;Machine Learning,0,82.34,3,4,0,No,None
+316,SQL;Python,3,74.93,6,2,0,No,None
+317,SQL,0,95.55,9,0,1,No,None
+318,SQL;C++;Python,5,78.13,4,2,0,No,None
+319,Java;SQL;Data Analysis,4,72.61,9,0,0,No,None
+320,Python;Machine Learning,3,97.65,4,3,0,Interview,None
+321,Data Analysis,2,93.98,0,3,1,No,None
+322,SQL,0,93.75,1,2,1,No,None
+323,Python,0,80.49,8,2,0,No,None
+324,Java,3,91.58,1,2,1,No,None
+325,Machine Learning;Data Analysis,2,67.17,9,4,1,No,None
+326,C++;Python,2,82.93,1,1,1,No,None
+327,Data Analysis;SQL,5,99.35,8,2,1,No,None
+328,C++;SQL;Data Analysis,5,71.64,2,3,0,No,None
+329,Python;Machine Learning,5,91.77,1,3,1,Interview,None
+330,C++,5,79.62,6,2,1,No,None
+331,SQL;Machine Learning;Data Analysis,5,61.59,8,2,1,No,None
+332,Python,5,90.52,5,3,1,No,None
+333,Data Analysis,4,66.74,6,4,1,No,None
+334,Machine Learning;Python;SQL,2,85.26,2,0,1,Interview,None
+335,Python;Java;C++,5,63.43,2,3,0,No,None
+336,Data Analysis;C++;SQL,2,97.87,7,0,0,No,None
+337,Machine Learning,2,71.67,6,2,0,No,None
+338,Data Analysis;C++,1,69.06,4,1,0,No,None
+339,C++,4,65.17,5,2,0,No,None
+340,C++;SQL,5,97.84,8,2,0,No,None
+341,Data Analysis;Python,0,88.48,2,2,1,No,None
+342,SQL,3,89.67,2,3,0,No,None
+343,Data Analysis;C++,0,79.98,5,3,0,No,None
+344,Data Analysis;C++,4,78.99,7,1,1,No,None
+345,Python;C++;Data Analysis,3,64.4,4,0,1,No,None
+346,SQL;Data Analysis,4,82.39,0,0,1,No,None
+347,C++,2,69.88,2,0,1,No,None
+348,Python;Machine Learning;C++,3,99.09,7,2,1,Yes,150
+349,Python;Java,2,91.86,3,1,1,No,None
+350,SQL;Machine Learning;C++,0,76.52,8,2,0,No,None
+351,C++;Python;Java,0,66.05,5,1,0,No,None
+352,Machine Learning;Java,3,91.41,9,4,1,No,None
+353,C++;Data Analysis,3,64.88,3,3,1,No,None
+354,Python,5,67.57,3,2,1,No,None
+355,Machine Learning;Java;Data Analysis,4,68.46,9,4,0,No,None
+356,Machine Learning;Python,5,82.28,4,0,1,Yes,125
+357,C++;Python;Java,4,91.48,6,4,1,No,None
+358,C++,5,72.57,6,3,1,No,None
+359,Data Analysis,2,63.39,9,3,0,No,None
+360,C++,3,78.58,6,3,0,No,None
+361,SQL;Machine Learning;Data Analysis,0,89.92,4,4,1,No,None
+362,C++;Data Analysis,4,68.87,8,0,0,No,None
+363,C++,4,68.8,1,2,1,No,None
+364,Java;C++;Data Analysis,0,97.89,7,0,1,No,None
+365,Machine Learning;Java;Python,5,98.17,9,1,1,Yes,150
+366,C++;SQL,4,99.62,7,1,0,No,None
+367,SQL;Python;Data Analysis,2,92.31,2,2,1,No,None
+368,SQL;Machine Learning;C++,3,67.53,4,3,0,No,None
+369,C++,0,68.48,7,2,1,No,None
+370,C++;SQL;Machine Learning,3,73.61,9,4,0,No,None
+371,Machine Learning;C++;Data Analysis,4,72.73,8,3,0,No,None
+372,Java;Data Analysis,4,98.26,6,2,1,No,None
+373,C++;Java;Data Analysis,0,91.56,3,2,1,No,None
+374,SQL,2,88.96,3,4,0,No,None
+375,C++;Data Analysis;Machine Learning,1,67.44,2,4,0,No,None
+376,Data Analysis;Java;C++,0,96.38,7,0,0,No,None
+377,Java,1,93.11,5,1,1,No,None
+378,Machine Learning;SQL;Python,5,66.55,9,2,1,No,None
+379,Python;Machine Learning,1,94.85,5,0,0,Interview,None
+380,Python;Java,2,70.89,9,3,1,No,None
+381,Data Analysis;Java,5,63.23,9,3,0,No,None
+382,C++,1,86.27,8,1,0,No,None
+383,SQL;Machine Learning,5,86.15,2,3,1,No,None
+384,C++;Python;SQL,1,63.8,3,1,1,No,None
+385,Machine Learning;C++;SQL,2,72.75,2,3,1,No,None
+386,Data Analysis;C++;Python,1,99.71,2,3,0,No,None
+387,Python;Java;SQL,1,87.14,0,2,1,No,None
+388,Data Analysis,1,89.2,9,4,0,No,None
+389,C++,0,68.52,5,2,0,No,None
+390,Data Analysis,0,63.15,8,0,1,No,None
+391,Python;C++;Java,0,71.08,4,4,1,No,None
+392,SQL;Python;Machine Learning,2,69.96,9,2,1,No,None
+393,Python;SQL,5,69.38,1,4,0,No,None
+394,SQL;C++,4,67.71,9,4,1,No,None
+395,Java,1,82.99,3,4,0,No,None
+396,C++;Machine Learning;Java,1,73.12,5,3,0,No,None
+397,Java,2,92.81,6,4,0,No,None
+398,Machine Learning,1,67.36,6,3,1,No,None
+399,Machine Learning;Java,0,78.59,3,4,1,No,None
+400,Machine Learning;Java,4,60.55,9,3,1,No,None
+401,C++,3,79.27,9,4,0,No,None
+402,SQL;C++;Data Analysis,1,62.23,4,0,0,No,None
+403,Python;C++;SQL,0,99.11,3,2,0,No,None
+404,Machine Learning;Java;Python,3,91.62,9,4,1,Yes,150
+405,SQL;Machine Learning,4,79.6,5,0,1,No,None
+406,Data Analysis;C++,3,63.46,6,2,0,No,None
+407,SQL;C++;Data Analysis,0,83.7,1,1,0,No,None
+408,C++,5,90.35,9,4,0,No,None
+409,Python;Java,5,67.63,2,1,0,No,None
+410,Machine Learning;SQL,3,82.73,7,2,0,No,None
+411,SQL;Data Analysis;Python,2,92.57,6,2,0,No,None
+412,C++;SQL;Python,3,90.73,0,4,1,No,None
+413,Data Analysis;Python;C++,1,92.12,3,0,0,No,None
+414,Java;Machine Learning,1,95.17,4,4,1,No,None
+415,Java;Data Analysis,5,97.51,2,0,0,No,None
+416,SQL;Java;Python,2,76.22,3,4,0,No,None
+417,Data Analysis;Python;SQL,0,82.75,9,0,1,No,None
+418,Python;Machine Learning,1,91.63,9,3,1,Interview,None
+419,Data Analysis;Java,5,87.89,9,0,1,No,None
+420,SQL,4,99.82,6,0,1,No,None
+421,Data Analysis;C++,5,60.55,7,2,0,No,None
+422,Java,1,74.21,8,1,0,No,None
+423,Machine Learning,1,71.24,1,4,0,No,None
+424,Machine Learning;Data Analysis,5,70.49,3,2,0,No,None
+425,Java;SQL,0,68.9,0,1,1,No,None
+426,SQL;Data Analysis,3,88.36,2,2,0,No,None
+427,C++,1,63.39,7,2,1,No,None
+428,Java,5,89.66,6,4,0,No,None
+429,Data Analysis,5,87.74,7,3,0,No,None
+430,Data Analysis;C++;SQL,2,70.03,5,2,1,No,None
+431,C++,3,70.11,4,4,0,No,None
+432,SQL,4,85.15,9,0,0,No,None
+433,Python;C++;SQL,0,90.49,8,1,1,No,None
+434,Data Analysis;SQL;C++,4,95.06,4,4,0,No,None
+435,SQL;Python;Java,3,94.09,8,3,0,No,None
+436,Python;Machine Learning,3,98.6,3,4,0,Interview,None
+437,SQL;Machine Learning;Java,3,83.26,4,4,1,No,None
+438,Python;C++;SQL,4,96.35,0,0,1,No,None
+439,C++;Python;Java,3,92.34,5,1,0,No,None
+440,Python,5,95.79,2,1,0,No,None
+441,C++;Python,4,60.47,9,3,0,No,None
+442,Java,3,98.64,1,1,0,No,None
+443,Java;C++;Machine Learning,5,78.94,5,0,1,No,None
+444,Data Analysis;Machine Learning,2,91.93,0,3,1,No,None
+445,Machine Learning;Java,3,65.09,8,0,1,No,None
+446,Data Analysis;Python,4,75.84,4,0,0,No,None
+447,Machine Learning;C++,1,70.86,6,4,1,No,None
+448,Python;SQL,3,71.67,9,4,1,No,None
+449,C++,1,64.93,8,4,0,No,None
+450,Java;SQL,5,92.23,8,2,1,No,None
+451,Data Analysis,2,60.37,6,0,0,No,None
+452,Machine Learning;SQL,0,72.5,3,1,0,No,None
+453,C++,2,66.98,3,3,0,No,None
+454,Java;Python,3,83.56,6,2,1,No,None
+455,Python;Java,1,70.17,7,4,1,No,None
+456,Data Analysis;Machine Learning;Python,1,70.36,6,2,0,No,None
+457,SQL,4,79.53,9,2,1,No,None
+458,Java,1,86.11,3,0,1,No,None
+459,Java;Python;Data Analysis,4,64.85,3,0,0,No,None
+460,Java;Data Analysis;SQL,5,67.02,7,1,1,No,None
+461,Machine Learning,0,69.89,8,3,1,No,None
+462,SQL,3,98.95,6,3,0,No,None
+463,Java,4,75.89,2,4,0,No,None
+464,SQL;Java;Python,0,83.96,9,1,1,No,None
+465,Python;Java;Data Analysis,1,69.66,0,3,0,No,None
+466,Java;Machine Learning,1,79.62,4,2,0,No,None
+467,Python;Java,0,62.96,5,2,0,No,None
+468,Python;Java,1,61.39,8,3,1,No,None
+469,C++;Machine Learning;Python,5,78.75,4,2,0,Interview,None
+470,Python;C++;Machine Learning,5,75.95,0,2,0,Interview,None
+471,Machine Learning;Data Analysis,0,65.48,3,4,1,No,None
+472,C++,4,87.5,1,2,1,No,None
+473,Java;Machine Learning;Python,4,99.72,3,3,1,Yes,125
+474,Data Analysis;Machine Learning;SQL,0,75.83,6,0,1,No,None
+475,Data Analysis;Python,4,84.98,8,2,0,No,None
+476,C++,4,98.52,2,3,1,No,None
+477,C++;Python,5,93.26,2,2,0,No,None
+478,Data Analysis;C++,4,78.54,3,1,0,No,None
+479,Python,2,89.5,6,4,1,No,None
+480,Machine Learning;Java,3,65.13,5,0,1,No,None
+481,Java,1,80.48,4,2,1,No,None
+482,Machine Learning;Data Analysis,2,71.16,3,3,0,No,None
+483,Data Analysis;SQL;C++,4,66.45,7,0,0,No,None
+484,Machine Learning;SQL;C++,5,77.05,3,2,1,No,None
+485,Machine Learning;C++;Python,0,65.24,2,1,0,No,None
+486,Python;Machine Learning;Java,4,87.96,6,3,0,Yes,125
+487,C++;Java,5,78.25,1,4,1,No,None
+488,SQL;C++,3,81.25,3,2,1,No,None
+489,C++;Python,4,65.86,7,3,1,No,None
+490,C++;SQL,0,65.59,3,2,1,No,None
+491,SQL;Data Analysis;Java,5,83.34,9,4,0,No,None
+492,C++;Python;Machine Learning,5,99.4,6,1,1,Yes,150
+493,Python,5,63.85,1,4,1,No,None
+494,Python;SQL,3,71.43,4,4,0,No,None
+495,Machine Learning,4,94.78,3,4,1,No,None
+496,Machine Learning,3,62.89,8,0,0,No,None
+497,Machine Learning;SQL;Python,1,95.04,6,3,0,Interview,None
+498,SQL;C++,1,80.97,8,2,0,No,None
+499,Python;SQL;Machine Learning,4,76.33,9,1,0,Yes,125
+500,Python;Machine Learning,3,72.39,6,2,1,No,None
+501,Java;Data Analysis;C++,0,71.88,1,0,0,No,None
+502,Python,5,72.23,1,1,1,No,None
+503,Machine Learning;SQL,5,95.39,1,0,0,No,None
+504,SQL,4,88.95,4,2,0,No,None
+505,Java;C++;Python,1,86.79,0,1,1,No,None
+506,Data Analysis;SQL;Python,1,91.95,6,2,0,No,None
+507,SQL,5,70.28,1,3,1,No,None
+508,SQL;Data Analysis;Machine Learning,4,84.72,3,0,0,No,None
+509,Java,3,78.4,8,3,0,No,None
+510,Machine Learning,1,91.3,7,3,0,No,None
+511,C++;Python;Java,3,72.37,9,2,0,No,None
+512,Data Analysis;Python;Machine Learning,1,85.73,1,2,1,Interview,None
+513,Machine Learning;Java;C++,1,95.29,3,4,1,No,None
+514,C++;SQL,2,76.09,3,4,0,No,None
+515,SQL,1,62.66,1,1,1,No,None
+516,Data Analysis;SQL,0,80.64,1,2,1,No,None
+517,Machine Learning;Python;Data Analysis,4,73.84,4,0,0,No,None
+518,Java,4,86.89,3,2,1,No,None
+519,Python;Data Analysis;SQL,3,98.04,7,2,0,No,None
+520,Data Analysis;C++,1,79.42,3,3,1,No,None
+521,Machine Learning;C++,0,78.65,7,3,0,No,None
+522,SQL;Java,3,86.18,4,4,1,No,None
+523,Python;SQL;C++,2,64.14,0,1,0,No,None
+524,SQL,3,70.14,8,1,1,No,None
+525,Data Analysis;Machine Learning;C++,3,96.76,7,2,1,No,None
+526,Data Analysis;SQL;Python,1,86.8,0,0,1,No,None
+527,C++,2,60.54,2,3,1,No,None
+528,Python;Data Analysis;Java,3,68.19,2,0,0,No,None
+529,Java;Data Analysis,0,87.31,4,3,1,No,None
+530,SQL;Data Analysis,0,90.58,6,2,0,No,None
+531,Python,4,93.59,0,1,1,No,None
+532,Data Analysis;C++,2,71.69,0,2,1,No,None
+533,Java,2,97.24,9,3,1,No,None
+534,Machine Learning;Java,4,82.12,5,1,1,No,None
+535,Machine Learning;SQL;Python,3,87.86,4,0,0,Interview,None
+536,Data Analysis;Python,2,83.87,2,0,0,No,None
+537,Python;C++,0,64.91,2,4,1,No,None
+538,SQL,0,98.52,3,0,1,No,None
+539,C++;Machine Learning;Data Analysis,1,64.92,9,4,0,No,None
+540,Data Analysis;C++;SQL,2,70.2,1,1,1,No,None
+541,C++,3,92.55,8,2,1,No,None
+542,SQL,4,84.74,3,2,1,No,None
+543,Machine Learning,4,93.53,9,1,0,No,None
+544,Data Analysis;SQL,3,80.63,2,1,0,No,None
+545,C++,5,75.08,9,3,0,No,None
+546,Java,1,96.87,6,0,1,No,None
+547,Machine Learning;C++,4,61.45,8,0,0,No,None
+548,Python;C++;SQL,2,94.25,1,0,1,No,None
+549,SQL;Java;Data Analysis,1,69.23,5,4,0,No,None
+550,Python,2,93.95,4,0,0,No,None
+551,Data Analysis;Python;Java,0,65.57,0,3,1,No,None
+552,SQL;Java,1,83.21,6,2,1,No,None
+553,Python,4,95.52,0,2,0,No,None
+554,SQL,1,78.94,9,4,0,No,None
+555,Java,1,89.86,8,3,0,No,None
+556,Java;Python;Data Analysis,1,92.19,3,1,0,No,None
+557,C++;Data Analysis;Machine Learning,5,89.46,7,2,1,No,None
+558,Machine Learning;Data Analysis;SQL,1,97.01,0,3,1,No,None
+559,SQL;Java;C++,2,77.87,4,1,0,No,None
+560,C++,0,66.93,2,4,0,No,None
+561,Data Analysis;SQL,3,61.91,3,0,1,No,None
+562,Machine Learning;Python,1,69.86,3,3,0,No,None
+563,Machine Learning;Python,4,65.73,7,2,0,No,None
+564,C++;Data Analysis,1,82.32,9,4,1,No,None
+565,Python,4,67.4,9,3,0,No,None
+566,SQL;Python,2,61.56,2,4,0,No,None
+567,Python;Machine Learning;C++,4,61.44,0,1,1,No,None
+568,Machine Learning;Data Analysis,3,93.26,4,3,1,No,None
+569,Python;C++;Java,0,83.66,1,0,1,No,None
+570,Machine Learning;C++,4,74.32,5,1,1,No,None
+571,Java;Python;C++,4,95.77,3,0,1,No,None
+572,SQL,0,62.81,8,4,1,No,None
+573,Python;Machine Learning;Java,3,99.21,6,0,1,Yes,150
+574,Java,1,84.65,1,1,0,No,None
+575,C++;Data Analysis;Java,4,67.34,6,1,1,No,None
+576,SQL;Data Analysis,0,87.16,9,1,1,No,None
+577,C++;SQL,2,90.54,7,4,1,No,None
+578,Machine Learning;Python;SQL,0,77.17,2,2,1,Interview,None
+579,SQL,2,94.47,2,4,1,No,None
+580,Machine Learning,3,66.03,1,1,1,No,None
+581,C++;SQL;Machine Learning,1,71.15,0,4,0,No,None
+582,Data Analysis;Machine Learning;Java,0,63.74,2,3,1,No,None
+583,Python;Machine Learning,5,68.44,9,3,0,No,None
+584,Java;SQL;Machine Learning,4,69.55,6,2,1,No,None
+585,Data Analysis;C++;Java,3,96.71,8,4,0,No,None
+586,Data Analysis;Python;SQL,0,63.12,8,4,0,No,None
+587,C++;SQL;Java,4,77.1,5,3,0,No,None
+588,Data Analysis;Machine Learning;Python,0,81.3,5,1,1,Interview,None
+589,Data Analysis;C++;SQL,2,95.95,4,0,0,No,None
+590,SQL,0,99.91,1,1,0,No,None
+591,Java;Data Analysis,5,90.14,6,2,1,No,None
+592,C++;Java,0,98.83,0,0,1,No,None
+593,Java,0,91.48,5,1,1,No,None
+594,Python,5,98.53,3,4,0,No,None
+595,Python;Machine Learning,3,88.29,2,4,1,Interview,None
+596,Data Analysis;Machine Learning;Python,0,63.19,0,3,0,No,None
+597,SQL;Machine Learning;Java,5,76.08,5,4,0,No,None
+598,C++;Java;Machine Learning,4,85.86,6,4,1,No,None
+599,Data Analysis,2,74.03,0,2,1,No,None
+600,Java;C++;Python,2,70.94,0,0,0,No,None
+601,SQL;Java,0,83.1,6,1,0,No,None
+602,Machine Learning;SQL,3,97.34,5,1,1,No,None
+603,C++;Java;Machine Learning,3,61.4,6,2,0,No,None
+604,C++;Java,4,90.77,7,0,1,No,None
+605,Data Analysis;Machine Learning,0,88.91,7,4,1,No,None
+606,C++;SQL,2,98.56,8,2,0,No,None
+607,Machine Learning;Data Analysis,3,97.23,8,4,1,No,None
+608,Java;Data Analysis,0,90.49,6,1,0,No,None
+609,Java;SQL;Python,3,80.82,8,2,0,No,None
+610,C++;SQL;Python,5,68.17,5,2,1,No,None
+611,Machine Learning;Python;SQL,3,81.81,8,2,0,Yes,125
+612,Java,2,90.61,1,1,1,No,None
+613,C++;Machine Learning,1,95.83,1,1,1,No,None
+614,C++,4,91.59,5,3,1,No,None
+615,Java,4,67.81,2,1,1,No,None
+616,SQL;Python,2,83.99,1,1,1,No,None
+617,Python;C++,3,73.29,7,4,1,No,None
+618,SQL;Java;C++,0,60.37,6,1,1,No,None
+619,SQL,3,68.01,7,0,1,No,None
+620,Python,2,64.53,5,4,1,No,None
+621,Python;SQL,4,93.71,8,3,0,No,None
+622,Java,3,70.34,8,0,1,No,None
+623,SQL,4,71.39,1,3,1,No,None
+624,Data Analysis;Java,0,98.4,9,2,0,No,None
+625,C++;Data Analysis;Python,4,75.16,4,2,0,No,None
+626,Python,4,60.38,8,2,0,No,None
+627,Java;Data Analysis,1,71.35,2,1,1,No,None
+628,Data Analysis;Machine Learning;C++,1,64.77,4,1,1,No,None
+629,SQL,5,64.11,7,4,0,No,None
+630,SQL,1,63.1,1,0,1,No,None
+631,Python,4,83.73,5,0,0,No,None
+632,C++,2,67.57,3,2,0,No,None
+633,Machine Learning;C++;Python,4,74.45,5,2,1,No,None
+634,C++,2,94.48,2,1,0,No,None
+635,Machine Learning;Python;Java,2,76.97,5,3,1,Interview,None
+636,Java;SQL;C++,1,96.63,6,0,1,No,None
+637,Machine Learning,3,79.92,9,0,1,No,None
+638,Java;Machine Learning,0,75.95,2,3,0,No,None
+639,Java;Python,1,90.02,4,0,1,No,None
+640,SQL;Python;Machine Learning,1,62.93,7,0,1,No,None
+641,C++;Python,3,63.58,1,1,1,No,None
+642,C++;SQL;Machine Learning,0,86.08,6,0,0,No,None
+643,Python;SQL;Data Analysis,4,79.48,0,2,0,No,None
+644,Java;Python,5,91.62,6,2,0,No,None
+645,Data Analysis;SQL;Java,5,96.65,0,4,0,No,None
+646,SQL,4,75.53,3,1,0,No,None
+647,SQL;Java;C++,1,83.86,3,1,0,No,None
+648,C++;Java;Machine Learning,0,80.03,4,2,0,No,None
+649,Data Analysis,1,99.26,1,1,1,No,None
+650,Python;SQL,2,93.24,5,1,0,No,None
+651,Python,1,96.47,5,4,0,No,None
+652,Python,1,70.17,7,3,0,No,None
+653,SQL;Machine Learning,4,90.9,9,0,0,No,None
+654,Machine Learning;C++,4,70.62,0,4,1,No,None
+655,Python;Java,4,68.35,3,3,0,No,None
+656,SQL;Python,5,97.77,1,0,1,No,None
+657,SQL;Data Analysis;Python,2,60.77,7,2,0,No,None
+658,C++;Data Analysis,4,98.62,3,3,0,No,None
+659,C++;Data Analysis;SQL,0,65.97,7,0,1,No,None
+660,C++,5,92.78,1,4,0,No,None
+661,C++;SQL;Machine Learning,3,71.04,3,0,0,No,None
+662,Data Analysis,0,74.03,8,1,0,No,None
+663,Python;C++,0,68.67,4,0,1,No,None
+664,Java;Machine Learning;SQL,4,83.42,5,2,0,No,None
+665,Python;Data Analysis,3,73.92,9,4,1,No,None
+666,Data Analysis;SQL,3,86.3,8,3,0,No,None
+667,C++;Machine Learning,5,60.63,8,0,1,No,None
+668,C++;Java;Data Analysis,3,62.57,6,4,0,No,None
+669,C++;Python,2,63.99,1,2,0,No,None
+670,SQL;Machine Learning;C++,4,76.76,6,3,1,No,None
+671,Data Analysis;Python,3,92.59,8,0,1,No,None
+672,Data Analysis,5,95.53,1,2,0,No,None
+673,C++;SQL;Java,2,69.79,6,1,0,No,None
+674,Java,1,82.97,6,4,1,No,None
+675,Data Analysis;C++;Python,1,90.73,2,4,1,No,None
+676,Python,2,71.55,5,0,0,No,None
+677,Data Analysis,5,76.36,7,2,0,No,None
+678,SQL;C++,2,80.96,9,3,1,No,None
+679,Python;Machine Learning;Java,4,65.39,7,3,0,No,None
+680,C++;SQL;Machine Learning,4,61.04,2,3,1,No,None
+681,Python;Machine Learning,1,66.11,5,3,0,No,None
+682,Machine Learning,3,85.07,1,0,0,No,None
+683,C++;SQL,5,62.94,1,0,0,No,None
+684,SQL;Java;Python,1,67.59,7,4,0,No,None
+685,Data Analysis,3,73.51,9,2,0,No,None
+686,C++,3,63.11,4,1,1,No,None
+687,C++;Machine Learning;Python,4,67.67,4,0,1,No,None
+688,SQL;C++,0,96.45,3,3,1,No,None
+689,Machine Learning,0,60.77,9,1,0,No,None
+690,Data Analysis;C++,2,86.14,3,4,1,No,None
+691,Python,4,75.38,7,3,0,No,None
+692,Python,3,86.91,2,2,0,No,None
+693,Java;C++,5,83.55,2,1,0,No,None
+694,Data Analysis,0,68.94,7,4,0,No,None
+695,Data Analysis;SQL,3,93.89,2,0,1,No,None
+696,Python;Machine Learning;SQL,0,79.68,1,2,0,Interview,None
+697,Java;Data Analysis,0,92.9,4,3,0,No,None
+698,Machine Learning;Java,0,76.24,2,1,1,No,None
+699,Java,5,99.39,5,4,0,No,None
+700,Java,4,90.82,6,1,1,No,None
+701,Python;SQL,5,98.64,2,2,1,No,None
+702,Machine Learning;SQL;C++,1,80.57,8,0,1,No,None
+703,Java;Machine Learning;Python,3,78.95,9,0,1,Yes,150
+704,SQL,4,90.22,0,2,0,No,None
+705,Data Analysis;C++,4,95.21,6,3,1,No,None
+706,C++;Data Analysis;Python,4,98.57,3,1,0,No,None
+707,SQL,4,72.98,6,3,0,No,None
+708,Python;C++;Machine Learning,5,91.95,8,4,1,Yes,150
+709,Machine Learning;SQL;Java,4,68.43,8,3,0,No,None
+710,Data Analysis;Machine Learning;Java,2,81.82,0,2,0,No,None
+711,C++,3,67.19,9,0,1,No,None
+712,Python;Data Analysis;Java,4,73.9,3,2,1,No,None
+713,Java;Data Analysis,3,97.25,6,2,0,No,None
+714,Data Analysis;Java,2,65.84,9,1,1,No,None
+715,Machine Learning;SQL,2,85.3,5,2,0,No,None
+716,SQL,3,83.72,8,4,1,No,None
+717,Data Analysis,0,64.83,6,1,1,No,None
+718,SQL;Java;Data Analysis,1,73.04,2,1,0,No,None
+719,Machine Learning;Python;Java,0,82.52,6,3,0,Interview,None
+720,Machine Learning;Java;Data Analysis,0,67.49,9,2,0,No,None
+721,Machine Learning;Data Analysis;SQL,5,92.02,4,3,1,No,None
+722,Python;Data Analysis;Machine Learning,0,98.89,1,3,1,Interview,None
+723,Data Analysis,4,68.59,9,1,0,No,None
+724,SQL;Java;C++,5,67.48,2,3,1,No,None
+725,Data Analysis;Python;C++,5,78.2,5,3,0,No,None
+726,Machine Learning;SQL;Data Analysis,2,89.91,5,1,1,No,None
+727,Java;C++,0,71.26,6,1,0,No,None
+728,C++;Python,2,60.8,5,0,0,No,None
+729,Python;Java;C++,3,81.65,8,2,1,No,None
+730,C++;Data Analysis,1,98.26,4,0,1,No,None
+731,SQL,5,75.65,4,1,1,No,None
+732,Java;SQL;Machine Learning,3,76.81,7,4,0,No,None
+733,SQL;C++;Java,3,98.76,7,3,0,No,None
+734,Machine Learning;Data Analysis,4,87.78,0,3,1,No,None
+735,SQL,1,88.77,2,1,0,No,None
+736,C++,3,82.51,5,3,0,No,None
+737,SQL,3,98.98,5,0,1,No,None
+738,Java;Data Analysis,1,87.55,0,3,1,No,None
+739,Python,1,95.8,1,4,1,No,None
+740,C++;Machine Learning,3,87.98,9,2,0,No,None
+741,Java;Data Analysis,1,89.4,6,0,0,No,None
+742,Machine Learning;SQL,3,71.62,0,2,0,No,None
+743,Java,3,72.14,9,2,0,No,None
+744,Machine Learning;C++,4,91.32,4,4,0,No,None
+745,SQL;C++,0,71.87,0,4,1,No,None
+746,Python,3,82.51,5,4,0,No,None
+747,Machine Learning;C++,2,69.97,6,4,0,No,None
+748,Java,5,92.68,7,0,1,No,None
+749,SQL;Python;Machine Learning,0,64.42,2,4,0,No,None
+750,C++;Machine Learning,0,93.18,2,0,0,No,None
+751,Data Analysis;C++;SQL,0,84.11,0,3,1,No,None
+752,Python;Data Analysis;C++,4,67.48,2,2,1,No,None
+753,SQL,3,81.68,4,3,0,No,None
+754,SQL;C++;Data Analysis,4,71.3,5,3,1,No,None
+755,C++,3,72.94,2,1,0,No,None
+756,Machine Learning,4,74.06,3,3,1,No,None
+757,Java;SQL;Machine Learning,4,62.53,4,3,0,No,None
+758,C++,5,99.44,4,1,1,No,None
+759,C++;Machine Learning;SQL,2,61.26,8,3,1,No,None
+760,Data Analysis;Machine Learning;Python,4,86.5,7,1,0,Yes,125
+761,Python,5,74.85,0,0,0,No,None
+762,SQL;Data Analysis,1,85.84,1,2,1,No,None
+763,SQL;Java;Machine Learning,2,74.25,4,4,0,No,None
+764,Machine Learning;C++;Python,4,86.95,2,3,0,Interview,None
+765,Python,0,89.17,6,0,0,No,None
+766,Data Analysis,1,87.62,5,2,1,No,None
+767,C++;Machine Learning,1,64.56,1,0,0,No,None
+768,Java;Machine Learning,5,86.28,7,1,1,No,None
+769,Java;SQL;Machine Learning,1,71.2,4,0,0,No,None
+770,C++,2,61.15,5,3,0,No,None
+771,Data Analysis;SQL;Machine Learning,4,76.59,7,3,0,No,None
+772,Machine Learning;Data Analysis;C++,4,77.34,5,4,1,No,None
+773,Machine Learning;SQL;C++,0,78.69,9,4,1,No,None
+774,SQL,5,88.19,2,3,0,No,None
+775,Data Analysis;Python,0,72.35,6,0,1,No,None
+776,Machine Learning;SQL,1,72.61,3,3,0,No,None
+777,Data Analysis;Python;C++,0,62.42,5,0,1,No,None
+778,Data Analysis;Machine Learning,2,87.47,5,3,0,No,None
+779,Java;Python;C++,4,82.71,4,2,1,No,None
+780,Machine Learning,1,73.98,0,0,0,No,None
+781,Data Analysis;Machine Learning;C++,0,88.21,7,1,1,No,None
+782,Data Analysis,5,81.49,9,1,0,No,None
+783,Python,2,78.77,1,4,0,No,None
+784,Data Analysis;Python;Java,2,80.45,3,2,0,No,None
+785,C++,0,85.45,2,1,1,No,None
+786,C++;Java,4,86.4,5,3,0,No,None
+787,Data Analysis;Java,0,71.56,0,1,1,No,None
+788,Machine Learning;Data Analysis,1,65.63,8,3,0,No,None
+789,Data Analysis;Python,0,66.27,4,2,1,No,None
+790,Java;Machine Learning;Data Analysis,2,85.58,4,4,0,No,None
+791,SQL;C++;Machine Learning,0,94.91,3,1,1,No,None
+792,Java;C++,4,76.38,3,4,0,No,None
+793,SQL;Machine Learning;Data Analysis,5,66.78,0,2,0,No,None
+794,Data Analysis;SQL;C++,3,90.26,8,0,0,No,None
+795,Java,0,93.3,8,2,1,No,None
+796,Machine Learning;SQL,4,95.22,3,2,0,No,None
+797,SQL,4,84.27,9,2,1,No,None
+798,Data Analysis;Java,5,94.43,9,0,1,No,None
+799,Data Analysis;C++;SQL,2,60.62,3,0,1,No,None
+800,SQL;Machine Learning,4,64.29,6,2,0,No,None
+801,SQL;Data Analysis;Python,4,63.7,3,0,1,No,None
+802,Data Analysis;Machine Learning;C++,4,88.5,0,3,1,No,None
+803,SQL;Java,4,62.78,8,2,1,No,None
+804,Python;SQL,1,79.85,1,1,1,No,None
+805,Python;SQL;C++,1,78.91,4,3,0,No,None
+806,SQL;C++;Java,2,72.43,3,2,0,No,None
+807,Machine Learning,0,94.82,7,1,1,No,None
+808,Machine Learning;SQL,4,66.82,5,1,1,No,None
+809,Python,5,74.1,6,4,1,No,None
+810,Data Analysis;Machine Learning;Java,0,90.97,1,4,1,No,None
+811,Python,5,61.22,3,1,1,No,None
+812,Machine Learning;Java;Data Analysis,0,86.92,3,2,1,No,None
+813,Python,2,92.66,1,2,1,No,None
+814,SQL;C++,4,97.29,9,2,1,No,None
+815,Data Analysis,4,95.05,3,2,0,No,None
+816,Python,3,72.78,8,1,1,No,None
+817,Java;C++;Machine Learning,5,83.45,7,0,1,No,None
+818,Data Analysis;Java,0,63.09,0,0,1,No,None
+819,SQL;Data Analysis,0,70.31,7,2,0,No,None
+820,Python;Data Analysis;Java,1,63.77,8,4,0,No,None
+821,Data Analysis;Python;Java,3,72.61,7,1,1,No,None
+822,Java;Python,1,95.01,9,0,1,No,None
+823,C++;Java,1,73.89,0,1,0,No,None
+824,SQL;Python;Machine Learning,1,82.48,7,4,1,Interview,None
+825,Machine Learning;Data Analysis,5,77.34,4,1,1,No,None
+826,SQL,5,78.36,8,4,0,No,None
+827,C++;Machine Learning,2,98.78,8,4,0,No,None
+828,C++;Java;Data Analysis,2,71.85,5,3,0,No,None
+829,Java;Python,1,85.09,2,4,1,No,None
+830,Java;C++,3,76.8,6,3,1,No,None
+831,SQL;Java;Python,0,62.45,2,4,0,No,None
+832,SQL;Data Analysis;Java,5,79.57,6,4,1,No,None
+833,Machine Learning,3,92.53,7,1,1,No,None
+834,C++;Data Analysis;SQL,4,63.95,4,3,1,No,None
+835,C++,5,62.78,4,0,0,No,None
+836,Python;Java;Machine Learning,5,66.15,3,0,0,No,None
+837,SQL;Java,2,90.58,2,1,0,No,None
+838,SQL,0,88.96,7,0,0,No,None
+839,Java;C++,0,82.6,5,0,1,No,None
+840,SQL;Data Analysis,4,78.73,5,4,0,No,None
+841,Data Analysis;Machine Learning;Python,4,95.53,1,2,0,Interview,None
+842,Data Analysis;SQL,5,90.67,3,2,1,No,None
+843,Java;Python;Machine Learning,1,92.48,4,0,1,Interview,None
+844,SQL;Java,2,92.53,9,1,0,No,None
+845,Data Analysis;Machine Learning,2,85.71,4,1,0,No,None
+846,SQL;Python;Data Analysis,5,78.32,2,3,0,No,None
+847,Machine Learning;Java,3,94.59,9,1,1,No,None
+848,Java,1,97.04,4,1,0,No,None
+849,Java;C++,5,60.95,4,4,0,No,None
+850,Machine Learning;SQL;C++,1,62.06,1,4,0,No,None
+851,Machine Learning;C++;Java,1,98.35,4,0,1,No,None
+852,Data Analysis,1,71.09,2,1,0,No,None
+853,Python;Machine Learning;C++,5,94.93,2,2,1,Interview,None
+854,Data Analysis;SQL;Python,2,75.55,4,1,1,No,None
+855,Python;Data Analysis;Java,2,64.76,8,1,1,No,None
+856,Machine Learning;Java;Data Analysis,1,63.22,1,0,1,No,None
+857,Machine Learning;C++,3,66.26,8,2,0,No,None
+858,Data Analysis,0,70,2,0,1,No,None
+859,Data Analysis,5,79.54,6,1,0,No,None
+860,C++;Python;Data Analysis,0,88.06,0,2,1,No,None
+861,C++,3,99.46,0,1,1,No,None
+862,Machine Learning,5,77.66,7,0,1,No,None
+863,C++;Machine Learning,1,80.73,8,0,1,No,None
+864,Machine Learning,2,80.87,2,4,0,No,None
+865,Data Analysis;SQL,0,81.58,5,2,0,No,None
+866,Python;C++;SQL,4,80.71,2,4,1,No,None
+867,Data Analysis,4,60.35,5,2,1,No,None
+868,Machine Learning,3,60.07,6,3,0,No,None
+869,Python,1,63.91,4,2,1,No,None
+870,SQL;Python,0,64.06,2,1,0,No,None
+871,Python;Data Analysis;C++,1,88.2,7,2,0,No,None
+872,SQL,0,68.2,4,4,1,No,None
+873,Java;Data Analysis,3,95.79,0,0,1,No,None
+874,Data Analysis;C++;SQL,3,97.14,8,0,0,No,None
+875,C++;Data Analysis,4,99.04,2,2,1,No,None
+876,Python;Machine Learning,1,97.56,1,3,0,Interview,None
+877,Data Analysis,5,70.88,2,0,1,No,None
+878,Python;Java,4,80.39,6,0,1,No,None
+879,C++;Machine Learning;Java,1,67.02,9,0,0,No,None
+880,Java;Python;Machine Learning,4,92.25,7,3,0,Yes,125
+881,C++;Machine Learning,5,95.54,1,4,0,No,None
+882,Machine Learning;C++,2,94.05,6,2,1,No,None
+883,Java,2,77.33,4,3,0,No,None
+884,SQL;Java,2,90.35,8,2,1,No,None
+885,Java;Python,2,63.9,6,1,0,No,None
+886,Data Analysis,0,61.61,0,2,1,No,None
+887,Machine Learning;Python,2,90.13,0,0,0,Interview,None
+888,Java,5,77.01,5,3,0,No,None
+889,Python,3,99.82,8,3,0,No,None
+890,Python;C++;Data Analysis,3,63.89,0,4,1,No,None
+891,Data Analysis,0,94.23,2,1,0,No,None
+892,C++,2,79.2,4,4,1,No,None
+893,Java;Machine Learning,2,93.09,3,4,1,No,None
+894,Python,2,92.69,0,1,0,No,None
+895,Machine Learning,4,96.64,9,0,0,No,None
+896,Java;Machine Learning,1,71.91,3,3,0,No,None
+897,Machine Learning;Data Analysis,4,97.99,3,2,1,No,None
+898,SQL;Java;Data Analysis,1,66.07,9,1,1,No,None
+899,Data Analysis,2,63.28,3,4,0,No,None
+900,Java;C++;SQL,2,77.26,2,2,1,No,None
+901,Python;Machine Learning,4,93.13,6,1,0,Yes,125
+902,Data Analysis;Java;C++,4,78.94,0,1,1,No,None
+903,C++;Python;SQL,1,93.17,1,0,0,No,None
+904,Data Analysis;C++;SQL,3,89.19,0,0,1,No,None
+905,C++;Data Analysis;Java,1,68.38,3,3,1,No,None
+906,C++;Java,4,97.96,4,3,0,No,None
+907,C++;Java;Machine Learning,5,62.43,9,2,1,No,None
+908,Data Analysis;Java,4,95.93,4,3,1,No,None
+909,Python;Machine Learning,5,72.18,1,1,0,No,None
+910,C++;Machine Learning,0,80.01,2,1,1,No,None
+911,Java;C++;Data Analysis,4,76.89,3,1,1,No,None
+912,Java;SQL,0,66.87,9,1,1,No,None
+913,Python;C++;SQL,3,74.33,5,0,0,No,None
+914,Machine Learning,1,67.72,5,1,1,No,None
+915,Java;Python;SQL,5,68.16,1,1,0,No,None
+916,Data Analysis;Machine Learning,1,67.48,1,1,1,No,None
+917,Python;Data Analysis;Java,0,79.56,8,4,0,No,None
+918,Data Analysis;Machine Learning;Java,5,91.92,1,2,0,No,None
+919,Java;SQL,1,82.76,1,2,1,No,None
+920,Python;Java,4,95.73,2,1,1,No,None
+921,Data Analysis,2,85.46,8,1,1,No,None
+922,Data Analysis,0,87.57,5,2,1,No,None
+923,Java;Machine Learning,1,86.7,5,3,0,No,None
+924,Java;C++;Data Analysis,0,77.98,9,4,0,No,None
+925,SQL;Data Analysis;C++,0,87.57,4,4,0,No,None
+926,Machine Learning;SQL,5,62.79,6,3,0,No,None
+927,SQL;Data Analysis,5,94.39,3,1,0,No,None
+928,C++;Data Analysis;Python,2,91.11,9,2,1,No,None
+929,C++;SQL;Java,4,69.81,9,4,1,No,None
+930,SQL;C++,0,90.72,2,3,1,No,None
+931,Machine Learning,1,60.51,6,3,1,No,None
+932,Data Analysis,3,68.69,9,0,0,No,None
+933,Python,0,62.61,0,3,1,No,None
+934,Machine Learning;Data Analysis,0,91.21,5,0,1,No,None
+935,Data Analysis;C++;SQL,2,90.23,1,0,1,No,None
+936,Java,4,92.55,1,4,0,No,None
+937,Java;C++,3,60.18,7,1,0,No,None
+938,Java;C++;SQL,5,80.05,2,1,1,No,None
+939,C++;Data Analysis,5,88.19,8,3,0,No,None
+940,Java;SQL,1,66.22,3,2,1,No,None
+941,Java,3,85.99,5,2,0,No,None
+942,Machine Learning;C++;Java,5,63.36,0,0,1,No,None
+943,Data Analysis;Python;Machine Learning,1,67.25,9,3,0,No,None
+944,Data Analysis,4,79.03,9,3,0,No,None
+945,Python,1,86.14,2,1,1,No,None
+946,Java;Data Analysis,5,65.83,3,2,0,No,None
+947,Data Analysis,2,67.41,4,4,0,No,None
+948,Python,2,68.18,0,3,1,No,None
+949,Machine Learning,2,69.55,3,3,1,No,None
+950,SQL;Python,5,69.06,4,1,0,No,None
+951,Data Analysis;Machine Learning;C++,2,75.81,3,4,1,No,None
+952,C++;Python;Machine Learning,3,86.15,9,4,0,Yes,125
+953,Machine Learning;C++;Python,4,77.52,9,4,0,Yes,125
+954,Machine Learning,1,91.04,6,4,1,No,None
+955,SQL;Machine Learning;Data Analysis,1,88.77,7,2,1,No,None
+956,Machine Learning,5,65.06,7,0,0,No,None
+957,Data Analysis;C++;Java,2,61.95,2,4,1,No,None
+958,Python,2,95.12,4,0,1,No,None
+959,Java;Data Analysis;Machine Learning,0,63.19,9,0,1,No,None
+960,Machine Learning;SQL;Data Analysis,4,65.93,7,1,1,No,None
+961,C++;Python,3,60.89,6,4,1,No,None
+962,C++;Data Analysis,1,85.13,8,2,1,No,None
+963,Java;Data Analysis;SQL,0,83.29,9,1,0,No,None
+964,Python;Data Analysis;Machine Learning,0,99.48,6,1,0,Interview,None
+965,C++;Data Analysis,5,95.48,1,0,1,No,None
+966,C++;Python;Machine Learning,1,76.43,3,3,1,Interview,None
+967,Java;Python;C++,5,74.86,7,2,0,No,None
+968,Data Analysis;SQL,3,71.87,8,4,0,No,None
+969,Python;Machine Learning;Data Analysis,0,66.1,6,4,1,No,None
+970,Java,0,65.52,4,2,1,No,None
+971,Machine Learning;C++;SQL,4,65.29,0,4,1,No,None
+972,Python,3,64.56,8,3,1,No,None
+973,SQL;Machine Learning;Python,0,69.62,5,3,1,No,None
+974,SQL,3,72.27,1,4,0,No,None
+975,Java,1,98.46,9,1,0,No,None
+976,Java;C++;Python,2,83.14,9,4,0,No,None
+977,Java;Machine Learning,0,99.5,1,4,1,No,None
+978,Machine Learning,4,74.9,9,2,1,No,None
+979,Data Analysis;Machine Learning,1,78.31,0,3,0,No,None
+980,C++;Java,3,72.98,3,1,0,No,None
+981,Data Analysis;Python;SQL,5,67.32,9,2,0,No,None
+982,Python,1,65.73,1,2,1,No,None
+983,Java;Python,0,97.8,9,1,0,No,None
+984,Machine Learning;Data Analysis,3,99.47,8,1,0,No,None
+985,C++;SQL;Python,2,61.8,1,2,0,No,None
+986,SQL;C++;Machine Learning,1,66.01,8,4,1,No,None
+987,SQL,0,76.94,0,1,0,No,None
+988,C++;Data Analysis;Java,4,67.45,6,0,1,No,None
+989,Machine Learning;C++;Python,5,74.56,5,1,0,No,None
+990,SQL;Java;Python,3,65.16,5,2,0,No,None
+991,SQL,1,78.26,1,0,0,No,None
+992,C++,1,70.87,0,2,0,No,None
+993,Data Analysis;Java;C++,2,74.08,9,3,1,No,None
+994,SQL;Python,2,63.77,7,3,0,No,None
+995,Python,4,77.13,7,4,1,No,None
+996,C++;SQL,5,99.33,1,1,1,No,None
+997,Python;Java,4,73.15,3,2,0,No,None
+998,Java,0,95.06,3,0,1,No,None
+999,C++;Machine Learning,0,93.73,1,1,1,No,None
+1000,Machine Learning;C++;Python,4,98.08,8,4,1,Yes,150
