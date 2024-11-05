@@ -35,6 +35,7 @@ At the same github address is two .ipynb files that is of the code for everythin
 
 - phase2.ipynb
 - submission_instructions.ipynb
+- combine.py also has some code for loading and predicting
 
 ## Submission Instructions
 Make sure your labels from your validation results are in a zip file before submitting it to CodaLabs.  The file inside should be named preds.txt with just the labels.
