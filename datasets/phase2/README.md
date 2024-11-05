@@ -31,7 +31,10 @@ https://github.com/RyanS974/RyanS974/tree/main/datasets/phase2
 
 At the same github address is two .ipynb files that is of the code for everything from the loading of the dataframes, running the classification in the training phase, getting the metric f1-score in the validation phase, and various other things.
 
-The files are named phase2.ipynb and submission_instructions.ipynb
+**The files are named:**
+
+- phase2.ipynb
+- submission_instructions.ipynb
 
 ## Submission Instructions
 Make sure your labels from your validation results are in a zip file before submitting it to CodaLabs.  The file inside should be named preds.txt with just the labels.
