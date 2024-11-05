@@ -33,15 +33,6 @@ At the same github address is two .ipynb files that is of the code for everythin
 
 The files are named phase2.ipynb and submission_instructions.ipynb
 
-## Competition Requirements
-
-### Goal
-1. Train a model to predict both `hire` and `pay` labels using the features provided.
-2. Calculate the following metrics on your test set:
-   - **Hire Decision F1-score**: 
-   - **Pay Category F1-score**: 
-3. Submit the average of these on CodaLabs.  Just add them together and divide by two.
-
 ## Submission Instructions
 Make sure your labels from your validation results are in a zip file before submitting it to CodaLabs.  The file inside should be named preds.txt with just the labels.
 
