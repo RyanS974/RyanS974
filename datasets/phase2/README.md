@@ -35,7 +35,7 @@ At the same github address is two .ipynb files that is of the code for everythin
 
 - phase2.ipynb
 - submission_instructions.ipynb
-- combine.py also has some code for loading and predicting
+- combine.py also has some code for loading and predicting. This will write a preds.txt file also that would need to be zipped before submission.  This is of the baseline model for CodaLabs and would need to be modified, such as hyperparameters modification, of the three that are in the code, or added hyperparameters.  You could modify this however you want also with a new classifier also.
 
 ## Submission Instructions
 Make sure your labels from your validation results are in a zip file before submitting it to CodaLabs.  The file inside should be named preds.txt with just the labels.
