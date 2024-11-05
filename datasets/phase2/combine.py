@@ -53,7 +53,7 @@ pipeline.fit(X_train, y_train)
 y_val_pred = pipeline.predict(X_val)
 
 # Write predictions to a file in "value,value" format
-with open("submission.txt", "w") as file:
+with open("preds.txt", "w") as file:
     for prediction in y_val_pred:
         file.write(",".join(map(str, prediction)) + "\n")
 
