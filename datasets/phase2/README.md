@@ -19,8 +19,8 @@ The provided dataset includes features like:
 - **Projects**: Number of completed projects.
 - **Extracurriculars**: Indicator for involvement in extracurricular activities.
 
-### Data File Location
-The datasets is provided on my CodaLab page and GitHub.
+### Data Files Locations
+The datasets are provided on my CodaLab page and GitHub.
 
 - training_set_labeled.csv: Contains features and labels for each candidate.
 - validation_set_unlabeled.csv: Contains just the features of the validation set.
