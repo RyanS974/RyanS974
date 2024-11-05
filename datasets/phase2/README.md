@@ -64,6 +64,6 @@ https://www.kaggle.com/datasets/tarekmuhammed/job-fair-candidates
 For full details of the Apache 2.0 License, please refer to the following link: [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## Questions and Support
-If you need help or have questions, reach out on the competition forum or email me at rysmith@umich.edu.
+If you need help or have questions, reach out on the competition forum or email me at rysmith _AT_ umich _DOT_ edu.
 
 Good luck!
