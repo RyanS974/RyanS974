@@ -23,7 +23,7 @@ The provided dataset includes features like:
 The datasets are provided on my CodaLab page and GitHub.
 
 - training_set_labeled.csv: Contains features and labels for each candidate. 400 datapoints for training.
-- validation_set_unlabeled.csv: Contains just the features. 300 datapointes for validation.
+- validation_set_unlabeled.csv: Contains just the features. 300 datapoints for validation.
 - test_set_unlabeled.csv: Contains just the features. 300 datapoints for testing.
 
 https://github.com/RyanS974/RyanS974/tree/main/datasets/phase2
