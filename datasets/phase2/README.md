@@ -22,8 +22,9 @@ The provided dataset includes features like:
 ### Data Files Locations
 The datasets are provided on my CodaLab page and GitHub.
 
-- training_set_labeled.csv: Contains features and labels for each candidate.
-- validation_set_unlabeled.csv: Contains just the features of the validation set.
+- training_set_labeled.csv: Contains features and labels for each candidate. 400 datapoints for training.
+- validation_set_unlabeled.csv: Contains just the features. 300 datapointes for validation.
+- test_set_unlabeled.csv: Contains just the features. 300 datapoints for testing.
 
 https://github.com/RyanS974/RyanS974/tree/main/datasets/phase2
 
@@ -31,10 +32,15 @@ https://github.com/RyanS974/RyanS974/tree/main/datasets/phase2
 
 At the same github address is two .ipynb files that is of the code for everything from the loading of the dataframes, running the classification in the training phase, getting the metric f1-score in the validation phase, and various other things.
 
+The example workflow would be:
+- train the model with training_set_labeled.csv
+- validate the model with hyperparameter tuning and metrics using validation_set_unlabeled.csv
+- test your model with test_set_unlabeled.csv (this is what your submission file preds.txt is based on)
+
 **The files are named:**
 
 - submission_instructions.ipynb
-- combine.py also has some code for loading and predicting. This will write a preds.txt file also that would need to be zipped before submission.  This is of the baseline model for CodaLabs and would need to be modified, such as hyperparameters modification, of the three that are in the code, or added hyperparameters.  You could modify this however you want also with a new classifier also.
+- combine.py also has some code for loading and predicting. This will write a preds.txt file also that would need to be zipped before submission.  This is of the baseline model for CodaLabs and would need to be modified, such as hyperparameters modification, of the three that are in the code, or added hyperparameters.  You could modify this however you want also with a new classifier also.  This is a simple example using the training set and test set.  the validation set is not used.
 
 ## Submission Instructions
 Make sure your labels from your validation results are in a zip file before submitting it to CodaLabs.  The file inside should be named preds.txt with just the labels.
