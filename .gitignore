@@ -13,6 +13,7 @@
 
 # ignore files
 .DS_Store
+.gitignore~
 
 # ignore directories
 
