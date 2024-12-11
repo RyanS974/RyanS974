@@ -1,4 +1,4 @@
-### Hi, I'm Ryan.
+### Name: Ryan
 
 - I'm currently pursuing a Master's of Science degree in Artificial Intelligence, with a concentration in AI and Software Engineering.
 
