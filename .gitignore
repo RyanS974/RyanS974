@@ -1,0 +1,18 @@
+# * wildcard, *.txt will ignore anything before .txt
+#
+# ? wildcard, ?.txt will ignore one character before .txt
+# ??.txt will ignore two characters before .txt
+#
+# [] wildcard, [abc].txt will ignore a.txt, b.txt, or c.txt
+# [a-zA-Z].txt will ignore any character before .txt
+# [0-1].txt will ignore any digit before .txt
+#
+# / after a directory will ignore the directory
+# logs/ will ignore the directory logs from the root repo directory
+# 
+
+# ignore files
+.DS_Store
+
+# ignore directories
+
