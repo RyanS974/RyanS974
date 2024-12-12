@@ -1,5 +1,3 @@
-### Name: Ryan
-
 - I'm currently pursuing a Master's of Science degree in Artificial Intelligence, with a concentration in AI and Software Engineering.
 
 - The main programming languages I am interested in are: Python, Swift, C, and SQL.
