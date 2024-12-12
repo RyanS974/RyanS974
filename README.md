@@ -1,8 +1,11 @@
 - I'm currently pursuing a Master's of Science degree in Artificial Intelligence, with a concentration in AI and Software Engineering.
+  - Completed first semester courses:
+    - Advanced AI
+    - Machine Learning
 
 - The main programming languages I am interested in are: Python, Swift, C, and SQL.
 
-- The Python AI libraries I am interested in are: SciKit-Learn, PyTorch, TensorFlow, Pandas, and NumPy.
+- The Python AI libraries I am interested in are: SciKit-Learn, PyTorch, TensorFlow, and HuggingFace Transformers.
 
 <!--
 **RyanS974/RyanS974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
