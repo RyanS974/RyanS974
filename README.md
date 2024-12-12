@@ -1,7 +1,15 @@
 - I'm currently pursuing a Master's of Science degree in Artificial Intelligence, with a concentration in AI and Software Engineering.
-  - Completed first semester courses:
+  - Completed first semester (Fall 2024) courses:
     - Advanced AI
     - Machine Learning
+  - Starting second semester (Winter 2025) in January, with courses:
+    - Advanced Software Engineering
+    - Natural Language Processing
+  - The four other planned courses are:
+    - Deep Learning
+    - Software Engineering and AI
+    - Software Architechture and Design
+    - Software Testing and Maintenance
 
 - The main programming languages I am interested in are: Python, Swift, C, and SQL.
 
