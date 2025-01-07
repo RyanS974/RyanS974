@@ -4,10 +4,11 @@
 This is a brief tutorial on Markdown, focusing in the GitHub style.  It is often called GitHub flavored markdown (GFM).
 
 # Contents
-- Overview
-- Basic Text Formatting
-- Lists
-- Code
+- [Overview](#overview)
+- [Basic Text Formatting](#basic-text-formatting)
+- [Lists](#lists)
+- [Task Lists](#task-lists)
+- [Code](#code)
 - Tables
 - Links and Images
 - Quotes
@@ -261,7 +262,39 @@ Produces this:
 
 [HTML Link text](http:/www.github.com)
 
+You can also link inside of a markdown file.
 
+This code:
+
+`[Link to the Table of Contents](#contents)`
+
+Produces this:
+
+[Link to the Table of Contents](#contents)
+
+Any heading is a possible anchor, such as the one above `#contents`.  If there is a space, such as with `# Task Lists`, there is a hyphen inserted, so it would be `#task-lists`.
+
+You can also make your own anchors without headings using html div tags with the id attribute.
+
+This code:
+
+`<div id="custom-section"></div>`
+
+<div id="custom-section"></div>
+
+... will insert an invisible tag.  There isn't supposed to be anything seen on this directly.  We will link to it in code.
+
+This code:
+
+`[Go to the custom-section div tag id](#custom-section)`
+
+Produces this:
+
+[Go to the custom-section div tag id](#custom-section)
+
+Here is an in-file link to the Table of Contents at the top of this document, which also contains links to the level one headings of this document.
+
+[Go to the Table of Contents](#contents)
 
 ## Images
 
