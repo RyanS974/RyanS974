@@ -2,7 +2,7 @@
   - Completed first semester (Fall 2024) courses:
     - Advanced AI
     - Machine Learning
-  - Starting second semester (Winter 2025) in January, with courses:
+  - In the Winter 2025 semester with courses:
     - Advanced Software Engineering
     - Natural Language Processing
   - The four other planned courses are:
