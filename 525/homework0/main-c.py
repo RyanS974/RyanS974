@@ -7,6 +7,8 @@ import string
 from collections import Counter
 
 # custom imports
+## THESE ARE NOT USED IN THIS FILE
+## I was working on modularizing the code, and might still do so in the future, so I left them here.
 import utility
 import tokenization
 import lemmatization
