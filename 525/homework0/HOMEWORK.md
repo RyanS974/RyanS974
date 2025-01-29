@@ -37,7 +37,7 @@ Top 10 and last 10 for --no_punctuation only:
 
 ![Top 10 and last 10; only --no_punctuation](./only--no_punctuation-10.png)
 
-These top 10 words are mainly stopwords that are removed with --stopwords_removal, which is done in the next sample output below.
+These top 10 words are mainly stopwords that are removed with --stopwords_removal, which is done in the next sample output, 'Sample Output 2'.
 
 Plot for --no_punctuation only:
 
