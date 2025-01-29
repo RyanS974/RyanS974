@@ -100,7 +100,7 @@ After creating your figure(s), check out this wiki page, especially the introduc
 
 The results are similar, but there is more balance in the figures on the wikipedia site related to Zipf's law.  The distribution spoken of is of a more stable balanced distribution also.  "It is usually found that the most common word occurs approximately twice as often as the next common one, three times as often as the third most common, and so on," according to the wikipedia article.  The other figures on the wikipedia site are of a larger number of words and sources, it looks like.  This is causing a more balanced appearing plot, along with the scaling used.  
 
-My results are more on the extreme ends and less balanced, due partly to the single source of many frequently used words, with a lower vocabulary.  The x and y log scale does make them more like the wikipedia article plots, but they still are not as balanced.
+My results are more on the extreme ends and less balanced, due partly to the single source of many frequently used words, with a lower vocabulary.  The x and y log scale does make them more like the wikipedia article plots, but they still are not as balanced.  Another concepts is the log scale makes subtle differences more discernable and helps to reveal patterns better.
 
 Stopwords removal has the largest affect on the plots of my project.  When they are removed they are more balanced, and with them left the fast drop and flat line effect, to use that terminology description, are more prominent.
 
@@ -112,7 +112,7 @@ The main difference is of the larger amount of sources on the wikipedia page plo
 ### Question 6
 What does this imply about the impact of removing stopwords like “the” on the total number of tokens in a corpus, compared to removing regular content words (e.g., nouns and verbs)?
 
-The stopword removal causes a less balanced distribution of words, I believe.  With stopwords, there are considerably more tokens, of course also.
+The stopword removal causes a less balanced distribution of words, I believe.  With stopwords, there are considerably more tokens, of course also.  Removal of stopwords can have a minor impact on semantics of the sentences (meaning).  Removal of nouns and verbs makes the sentences not really understandable.  There is a major difference there. There are usually more nouns and verbs than stopwords, so removing stopwords will have a less effect on token count.
 
 ## Part 2 of Discussion
 

@@ -1,4 +1,5 @@
-# main.py
+# file: main.py
+# author: Ryan Smith, ARI 525, Homework 0.
 
 # standard library imports
 import sys
