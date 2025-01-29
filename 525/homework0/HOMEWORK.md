@@ -54,6 +54,8 @@ Plot for everything and --stem:
 
 ![Sample Output 2; all options with stem instead of lemma](./everything--stem.png)
 
+These plots for Sample Output 2 are more balanced, not by a large amount though.  There is less of a rapid drop and flat-line appearance in some of them. They are overall more like the more balanced wikipedia article plots referenced in this homework assignment.  The number labels on the plots match the occurrences of each unique token, such as the number one of ulyss with 646 for the everything and --stem plots, along with ~6,000 total number of unique tokens.  Similar matching numbers for the Sample Output 1 data and plots which match, as a side note.
+
 # Discussion
 
 The discussion is broken into two parts.  The first part is of the questions from section 2.4.  Then a paragraph or two about what was learned.
