@@ -44,7 +44,7 @@ Plot for --no_punctuation only:
 ![Sample Output 1; --no_puntuation](./only--no_punctuation.png)
 
 ## Sample Output 2
-This sample output is of all the options and stem instead of lemma.  This produces 59.700 total tokens and 6165 unique tokens.
+This sample output is of all the options and stem instead of lemma.  This produces 59,700 total tokens and 6165 unique tokens.
 
 Top 10 and last 10 for everything and using --stem:
 
