@@ -33,6 +33,24 @@ Here are the preprocessing / normalization steps I used:
 
 I will go over these steps more in the Methodology section below.
 
+### A Few Dataset Screenshots
+
+Here are a few screenshots of some basic analysis of the dataset.  This is from code in the menu system, mainly from 11.1 Diagnostics on Dataset.  The second screenshot of sizes of the documents was used to remove 'outliers', too large or too small documents (chapters or sccenes).  The last two are of basic print outs of the first few documents from both datasets.
+
+![basic-dataset.png](_images/dataset/basic-dataset.png)
+
+Character and String Sizes
+
+![advanced-dataset.png](_images/dataset/advanced-dataset.png)
+
+Example of Two Documents from HG Wells
+
+![example-hgwells.png](_images/dataset/example-hgwells.png)
+
+Example of Two Documents from Shakespeare
+
+![example-shakespeare.png](_images/dataset/example-shakespeare.png)
+
 ## Methodology
 
 Here are details of the various methodologies of the steps of the assignment.
@@ -116,11 +134,57 @@ A standard stopword removal process was implemented using NLTK.  The NLTK downlo
 
 Standard stemming and lemmatization processes were used with the NLTK library.  I used stemming mainly for the entire pipeline, but lemmatization is used also.  The main differences between the two is of lemmatization being more advanced and produces more readable words.  NLTK wordnet was used for lemmatization.
 
+#### Preprocessing Screenshots
+
+Here are some screenshots from preprocessing diagnostics, which are available in the code and menu system.
+
+Punctuation Removed
+
+![punctuation-removed.png](_images/preprocessing/punctuation-removed.png)
+
+Lowercasing
+
+![lowercased.png](_images/preprocessing/lowercased.png)
+
+Tokenization
+
+![tokenization-doc001.png](_images/preprocessing/tokenization-doc001.png)
+
+Stopword Removal
+
+![stopwords-removed.png](_images/preprocessing/stopwords-removed.png)
+
+Stemming (notice the word, 7th one, morn. In lemmatization it is morning.)
+
+![stemming.png](_images/preprocessing/stemming.png)
+
+Lemmatization
+
+![lemmatization.png](_images/preprocessing/lemmatization.png)
+
 ### Bag of Words
 
 Bag of Words is essentially collecting the unique terms and assignment frequency of occurrence to them.  I have several functions here on analyzing them, including stats such as total terms, and average frequency for the author and individual documents, to list some of them.
 
 I had some problems with Bag of Words working with Naive Bayes at first, until I made a second data structure with a unified author approach.  It worked better.  The indexing is unified in that approach, which is in the menu system and code of course.  I still have the separate indexing and various stats on that also.
+
+#### A Few Bag of Words Screenshots
+
+Per Document
+
+![BoW-per-doc.png](_images/bag_of_words/BoW-per-doc.png)
+
+Both Authors
+
+![BoW-both-authors.png](_images/bag_of_words/BoW-both-authors.png)
+
+Basic Structure
+
+![BoW-structure.png](_images/bag_of_words/BoW-structure.png)
+
+Unified (Both Authors)
+
+![BoW-unified.png](_images/bag_of_words/BoW-unified.png)
 
 ### Naive Bayes
 
@@ -140,6 +204,20 @@ Category 2, Shakespeare Plays
 
 The optional bonus analysis of using the 'log odds ratio informative Dirichlet prior' method.
 
+#### A Screen Shot of Naive Bayes Analysis
+
+The very detailed printout of Count-based Naive Bayes analysis
+
+![nb-count.png](_images/naive_bayes/nb-count.png)
+
+There are similar ones for binary, and tf-idf, in the program.  Here is the menu numbers for them: 
+
+```python
+print("31 Naive Bayes Analysis (count)")
+print("32 Naive Bayes Analysis (binary)")
+print("33 Naive Bayes Analysis (tf-idf)")
+```
+
 ### Topic Modeling
 
 Topic modeling was mainly of using gensim, and three topics were generated, 0, 1 and 2, which were then manually labeled by me.
@@ -152,7 +230,7 @@ Topic Modeling Table 1
 | 1 | Narrative Action and Description | said (0.014), came (0.007), time (0.006), thing (0.005), littl (0.005), went (0.005), saw (0.005), face (0.004), could (0.004), door (0.004) |
 | 2 | Casual Narrative and Dialogue | said (0.010), bert (0.007), thing (0.005), time (0.005), came (0.005), littl (0.004), could (0.004), seem (0.004), got (0.003), men (0.003) |
 
-### Author-Specific Topic Distribution
+Author-Specific Topic Distribution
 
 | Author | Top Topics | Topic Label | Probability |
 |--------|------------|-------------|-------------|
