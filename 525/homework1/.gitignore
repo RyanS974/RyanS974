@@ -1,0 +1,6 @@
+# .DS_Store files on MacOS are related to MacOS displaying folders and files
+.DS_Store
+
+# emacs saves
+*.*~
+
