@@ -206,7 +206,7 @@ The optional bonus analysis of using the 'log odds ratio informative Dirichlet p
 
 #### A Screen Shot of Naive Bayes Analysis
 
-The very detailed printout of Count-based Naive Bayes analysis
+The very detailed printout of Count-based Naive Bayes analysis is below.  Technically, the column 'P(w|c) is Naive Bayes on the word from the 'word' column.  LLR is Log Likelihood Ratio which is based on the next column of 'TF-IDF' weights.  The other one of 'P(w|other)' is doing a comparison with the other author.
 
 ![nb-count.png](_images/naive_bayes/nb-count.png)
 
