@@ -166,7 +166,7 @@ Lemmatization
 
 Bag of Words is essentially collecting the unique terms and assignment frequency of occurrence to them.  I have several functions here on analyzing them, including stats such as total terms, and average frequency for the author and individual documents, to list some of them.
 
-I had some problems with Bag of Words working with Naive Bayes at first, until I made a second data structure with a unified author approach.  It worked better.  The indexing is unified in that approach, which is in the menu system and code of course.  I still have the separate indexing and various stats on that also.
+I had some problems with Bag of Words working with Naive Bayes at first, until I made a second data structure with a unified author approach.  It worked better.  The indexing is unified in that approach, which is in the menu system and code of course.  I still have the separate indexing and various stats on that also.  This is where add-one smoothing, aka Laplace smoothing, becomes useful.  We have to use that in this case.  Many words will have no representation in the other authors category (our corpus is made up of two categories, each category being an author, which are composed of documents (approximately 115 for each)).  
 
 #### A Few Bag of Words Screenshots
 
@@ -322,7 +322,7 @@ Then we went on to
 
 Punctuation removal is pretty straight forward, it was removing the punctuation.  Lowercasing was similar.  Tokenization is taking a string, in our case twice modified, and putting it into list format as 'tokens' for easier processing.  Then we removed the stopwords, which are basic words such as 'the' and 'and', etc.  Stemming and lemmatization are very similar in that they reduce words to their base forms, but lemmatization is more accurate and more complex.  It results in more readable words.
 
-Bag of Words is putting the tokens into a matrix with the main concepts being of their frequencies. You have all the unique words and their frequency of usage, is the main concept.  Naive Bayes probabilities is of finding probabilities of words occurring in either of the categories, which was authors in this case.  HG Wells and Shakespeare.  Topic modeling is of having an algorithm and model find topic patterns, based on word groups.  I used Gensim, a popular library for this.  It groups topics by word groupings that it sees are related.  I then manually labeled those topics. It gives some stats based on this also. 
+Bag of Words is putting the tokens into a matrix with the main concepts being of their frequencies. You have all the unique words and their frequency of usage, is the main concept.  Naive Bayes probabilities is of finding probabilities of words occurring in either of the categories, which was authors in this case.  HG Wells and Shakespeare.  The basic algorithm of this i P(w|c), Probability of word given class (category).  Another description of this in our case is frequency of a word divided by the total words, which is usually calculated on a category basis, which is all the documents of an author, but you can calculate it per document, or even on a combined author level of the entire corpus.  Topic modeling is of having an algorithm and model find topic patterns, based on word groups.  I used Gensim, a popular library for this.  It groups topics by word groupings that it sees are related.  I then manually labeled those topics. It gives some stats based on this also, including probabilities of these topics occurring in each author's documents.
 
 ### Section 2
 
