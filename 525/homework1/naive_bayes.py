@@ -214,6 +214,12 @@ def print_top_words(results):
         print("- P(w|c): Probability of word given this author (TF-IDF weighted)")
         print("- P(w|other): Probability of word given other author (TF-IDF weighted)")
 
+# this is essentially doing:
+# LLR = log(P(w|c) / P(w|other)) with add-one smoothing (Laplace smoothing).
+#
+# with using add-one smoothing, it is intrinsically of using the combined indexing
+# of the authors both, as I mention in the report.  If we had just one author, there
+# would be no need for add-one smoothing because all words are accounted for.
 def calculate_llr(probabilities, smoothing_factor=1.0):
     """
     Calculate log likelihood ratios using binary presence/absence
@@ -288,3 +294,60 @@ def analyze_results(results):
         print(f"\nStrong indicators:")
         print(f"  {strong_indicators} words have LLR > 1.0")
         print(f"  These words are at least e≈2.718 times more likely in {category}'s texts")
+
+# Standard Naive Bayes
+
+def standard_nb(corpus):
+    """
+    Performs standard Naive Bayes analysis to find the most frequent words for each author.
+    Uses simple word count divided by total words to calculate probabilities.
+
+    :param corpus: Nested dictionary containing the corpus with authors and their documents
+    :return: Dictionary containing top words and their probabilities for each author
+    """
+    results = {}
+
+    for author in ['hgwells', 'shakespeare']:
+        if author not in corpus:
+            continue
+
+        # Initialize counters
+        word_counts = {}
+        total_words = 0
+
+        # Count words across all documents for this author
+        for doc_id, doc_data in corpus[author].items():
+            if isinstance(doc_data, dict) and 'stemmed_tokens' in doc_data:
+                # Count each word in the document
+                for word in doc_data['stemmed_tokens']:
+                    word_counts[word] = word_counts.get(word, 0) + 1
+                    total_words += 1
+
+        # Calculate probabilities and get top 10 words
+        word_probs = []
+        for word, count in word_counts.items():
+            probability = count / total_words
+            word_probs.append((word, count, probability))
+
+        # Sort by probability (highest first) and take top 10
+        top_words = sorted(word_probs, key=lambda x: x[1], reverse=True)[:10]
+
+        # Store results
+        results[author] = {
+            'total_words': total_words,
+            'unique_words': len(word_counts),
+            'top_words': top_words
+        }
+
+        # Print results for this author
+        print(f"\nResults for {author}:")
+        print(f"Total words: {total_words}")
+        print(f"Unique words: {len(word_counts)}")
+        print("\nTop 10 most frequent words:")
+        print(f"{'Word':<20} {'Count':>8} {'Probability':>12}")
+        print("-" * 42)
+        for word, count, prob in top_words:
+            print(f"{word:<20} {count:>8} {prob:>12.6f}")
+
+    return results
+

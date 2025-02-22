@@ -138,11 +138,11 @@ Standard stemming and lemmatization processes were used with the NLTK library.  
 
 Here are some screenshots from preprocessing diagnostics, which are available in the code and menu system.
 
-Punctuation Removed
+Punctuation Removed (no punctuation in the screenshot (there was before))
 
 ![punctuation-removed.png](_images/preprocessing/punctuation-removed.png)
 
-Lowercasing
+Lowercasing (screenshot shows the previous image lowercased)
 
 ![lowercased.png](_images/preprocessing/lowercased.png)
 
@@ -150,7 +150,7 @@ Tokenization
 
 ![tokenization-doc001.png](_images/preprocessing/tokenization-doc001.png)
 
-Stopword Removal
+Stopword Removal (in the screenshots, removed words in the top 10 of 'the', 'of', 'or', 'about')
 
 ![stopwords-removed.png](_images/preprocessing/stopwords-removed.png)
 
@@ -200,23 +200,38 @@ Category 1, HG Wells Books
 
 Category 2, Shakespeare Plays
 
-#### Optional Bonus Analysis
-
-The optional bonus analysis of using the 'log odds ratio informative Dirichlet prior' method.
-
 #### A Screen Shot of Naive Bayes Analysis
 
-The very detailed printout of Count-based Naive Bayes analysis is below.  Technically, the column 'P(w|c) is Naive Bayes on the word from the 'word' column.  LLR is Log Likelihood Ratio which is based on the next column of 'TF-IDF' weights.  The other one of 'P(w|other)' is doing a comparison with the other author.
+Here is a basic screen shot of menu option 30.1 of a basic Naive Bayes analysis.  It is basically P(w|c) with it being word frequency divided by total words.
+
+![nb-basic.png](_images/naive_bayes/nb-basic.png)
+
+Here is a more advanced analysis screen shot from menu option 31.  LLR sorted top 10 words, with some other stats.
 
 ![nb-count.png](_images/naive_bayes/nb-count.png)
 
+These comments are from menu option 31, Naive Bayes Analysis (count), although it is using weights.  The previous menu option uses just count.  I may have made this too complex for the assignment as a side note.  This course has been my introduction to formal NLP, with my having no real NLP experience before it.  The concepts have been confusing at first, but I have grasped them.  In making menu options 31, 32, and 33, I have tried to make some more advanced analysis, which often times became extremely confusing, and it might not have worked out completely right, although I think I have much of it right.
+
+The detailed printout of a Naive Bayes analysis from 31.  Technically, the column 'P(w|c) is Naive Bayes on the word from the 'word' column.  LLR is Log Likelihood Ratio which is based on the next column of 'TF-IDF' weights.  The other one of 'P(w|other)' is doing a comparison with the other author.
+
+Some comments on this.  We see the percentages drop considerably for the other author.  HG Wells and Shakespeare use considerably different words, and our data here is based on stemming, which is less coherent that lemmatization.  Lemmatization produces more sensical word tokens.  This is a factor in these stats.
+
+Also, this is basing a standard Naive Bayes with a TF-IDF weighting.  Menu option 30.1 gives a simple Naive Bayes analysis.
+
+LLR, log likelihood ratio, is taking P(w|c) and dividing it by P(w|other), and taking the log of that.  It is comparing the likelihood of a word for one author against it for another.  Here it is HG Wells and Shakespeare.  The positive value indicates more likelihood, negative less, and zero equal.  
+
 There are similar ones for binary, and tf-idf, in the program.  Here is the menu numbers for them: 
 
-```python
-print("31 Naive Bayes Analysis (count)")
-print("32 Naive Bayes Analysis (binary)")
-print("33 Naive Bayes Analysis (tf-idf)")
-```
+- 30.1 Basic Naive Bayes (count)
+- 31 Naive Bayes Analysis (count) (this is actually using some weighting)
+- 32 Naive Bayes Analysis (binary)
+- 33 Naive Bayes Analysis (tf-idf)
+
+The main concepts of these is of raw frequency count for 'count', presence or not of the word for 'binary', and a weighted calculation for 'TF-IDF'.
+
+TF-IDF considers not just the frequency of a word but also its relative rarity across the corpus, which helps to weight more important terms appropriately.
+
+LLR = log(P(w|c) / P(w|other)) is essentially what LLR does, and with add-one smoothing, aka Laplace smoothing, it is just making sure words that don't appear have a value of one, as in they show as appearing at least once, even though they actually didn't.  This is a need when combining the authors with indexing.  If we are just working with one category (author) we wouldn't need this because all words are accounted for.  It is only needed when combing the authors, such as in the LLR implementation.
 
 ### Topic Modeling
 
@@ -314,3 +329,18 @@ Bag of Words is putting the tokens into a matrix with the main concepts being of
 This was a great assignment.  I put a surprisingly large amount of time into it, and it payed off I believe.  I learned a lot from this assignment.  Single and double quotes can be from another character set not recognized by the standard string translator of python, and requires some manually work to remove them, to name one somewhat interesting concept.  I had almost no knowledge of NLP going into this course.  This has all been very new to me. This lesson had it all coming together finally, and making sense.  I had never heard of gensim, the python library before also.  Fairly easy to use though, no real problems.  
 
 One of the main things on the assignment is that I built the data structure from the beginning.  I sat down and really thought about how to put this into a model format.  The data structure I ended up using, corpus which was a dictionary, with nested dictionaries and some other types, worked great.  I didn't really need any other data structures.  It made the project go smoother also, I believe.  It helped me learn how the concepts worked more also, such as Bag of Words.
+
+Towards the end of this assignment I felt i really understood the core concepts.
+
+1. Preprocessing / Normalization
+- Punctuation Removal
+- Lowercasing
+- Tokenization (list element form, or space separated string)
+- Stopword Removal (common word removal)
+- Stemming or Lemmatization (Stemming simpler)
+
+2. Bag of Words (Frequency counts of words basically)
+3. Naive Bayes (Naive (aka simple) method of calculating probabilities: per word frequency divided by total words)
+4. Topic Modeling (Topics are groups of words that appear together often, along with manually labeling these; we check the probabilities of these topics occurring in a category (our authors here))
+
+Those are the main concepts, which really make sense when viewed as the overall process of analyzing a corpus.  That is a simple list and analysis above, but captures the main concepts.  A few more details: Naive Bayes of the simple "Naive" component of P(w|c), then LLR Log Likelihood Ratio which compares this with the category of another author, and puts it in log form, is the main concept with it.  This was good for comparison purposes, and was confusing at first to implement, but I figured it out.

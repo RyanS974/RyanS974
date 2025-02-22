@@ -25,8 +25,10 @@ def main():
         # get user input
         choice = input("Enter your choice: ")
 
+        # TODO: testing
         # match statement for user input
         match choice:
+            # Beginning Section
             case "1": # Assignment
                 print(data_share.overview_assignment)
                 print()
@@ -111,6 +113,7 @@ def main():
                 tm.run_topic_modeling(ds.corpus) # topic modeling
                 input("Press enter to continue...")
 
+            # Dataset Section
             case "10": # Dataset
                 print(dataset.overview_dataset)
                 print()
@@ -235,9 +238,14 @@ def main():
                     print("Unified bag-of-words not found. Run the Naive Bayes pipeline first.")
                 input("Press enter to continue...")
 
-            case "30": # Naive Bayes
+            case "30": # Naive Bayes Overview
                 print(nb.overview_naivebayes)
                 print()
+                input("Press enter to continue...")
+
+            case "30.1": # Standard Naive Bayes
+                print("This is a standard naive bayes analysis (word count divided by total words)")
+                nb.standard_nb(ds.corpus)
                 input("Press enter to continue...")
 
             case "31":  # Naive Bayes Analysis (count)
