@@ -50,6 +50,7 @@ def print_menu():
     # Naive Bayes
     print("#### Naive Bayes ####")
     print("30 Naive Bayes Overview")
+    print("30.1 Standard Naive Bayes (count)")
     print("31 Naive Bayes Analysis (count)")
     print("32 Naive Bayes Analysis (binary)")
     print("33 Naive Bayes Analysis (tf-idf)")
