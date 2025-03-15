@@ -9,6 +9,7 @@ import re
 import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+import pickle
 
 # Download necessary NLTK resources
 nltk.download('punkt', quiet=True)
@@ -17,7 +18,7 @@ nltk.download('stopwords', quiet=True)
 def download_embeddings():
     # Paths to save the downloaded embeddings
     glove_path = "models/glove-wiki-gigaword-100.txt"
-    google_news_path = "models/GoogleNews-vectors-negative100.bin"
+    fasttext_path = "models/fasttext-wiki-news-subwords-300.vec"
     
     # Download GloVe embeddings if not already present
     if not os.path.exists(glove_path):
@@ -29,13 +30,13 @@ def download_embeddings():
         print(f"GloVe embeddings already exist at {glove_path}")
     
     # Download Google News embeddings if not already present
-    if not os.path.exists(google_news_path):
-        print("Downloading Google News embeddings...")
-        google_news_model = load("word2vec-google-news-100")
-        google_news_model.save_word2vec_format(google_news_path, binary=True)
-        print(f"Google News embeddings saved to {google_news_path}")
+    if not os.path.exists(fasttext_path):
+        print("Downloading Fasttext embeddings...")
+        fasttext_model = load("fasttext-wiki-news-subwords-300")
+        fasttext_model.save_word2vec_format(fasttext_path, binary=True)
+        print(f"Fasttext embeddings saved to {fasttext_path}")
     else:
-        print(f"Google News embeddings already exist at {google_news_path}")
+        print(f"Fasttext embeddings already exist at {fasttext_path}")
 
 # load the dataset
 def load_data():
@@ -88,7 +89,6 @@ def preprocess_dataset(dataset):
     total_examples = len(dataset['train'])
 
     def process_example(example):
-        #print("Processing one example...") # REMOVED
         processed_text = preprocess_text(example['text'])
         example['processed_tokens'] = processed_text
         return example
@@ -145,4 +145,39 @@ def preprocess_dataset(dataset):
     print("Diagnostic 5 completed.")
 
     print("Dataset preprocessing complete.")
+
+    # Save the preprocessed dataset
+    save_preprocessed_dataset(processed_dataset, "preprocessed")
+    
     return processed_dataset
+
+def save_preprocessed_dataset(pds, directory):
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    with open(os.path.join(directory, 'preprocessed_dataset.pkl'), 'wb') as f:
+        pickle.dump(pds, f)
+    print(f"Preprocessed dataset saved to {directory}/preprocessed_dataset.pkl")
+
+def load_preprocessed_dataset(directory):
+    try:
+        with open(os.path.join(directory, 'preprocessed_dataset.pkl'), 'rb') as f:
+            print(f"Preprocessed dataset loaded from {directory}/preprocessed_dataset.pkl")
+            return pickle.load(f)
+    except FileNotFoundError:
+        print(f"No preprocessed dataset found in {directory}")
+        return None
+
+def preprocess_or_load_dataset(dataset, directory):
+    """
+    Load the preprocessed dataset if available, otherwise preprocess and save it.
+    """
+    pds = load_preprocessed_dataset(directory)
+    if pds is None:
+        if dataset is not None:
+            pds = preprocess_dataset(dataset)
+            save_preprocessed_dataset(pds, directory)
+        else:
+            print("Please load the dataset first.")
+    else:
+        print("Preprocessed dataset loaded successfully.")
+    return pds

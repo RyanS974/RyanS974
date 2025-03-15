@@ -7,6 +7,9 @@ import pandas as pd
 from gensim.models import KeyedVectors
 from tabulate import tabulate
 
+# Initialize a global variable to store results
+results = {}
+
 # Function to load pre-trained embeddings
 def load_pretrained_embeddings(file_path, binary=False):
     """
@@ -119,28 +122,29 @@ def semantic_field(model, words, n=5):
 def compare():
     """
     Compare different word embedding models using various queries.
-    This function loads both pre-trained embeddings (e.g., GloVe, Google News)
+    This function loads both pre-trained embeddings (e.g., GloVe, FastText)
     and your trained models (CBOW, Skip-gram) and performs a series of
     comparisons to evaluate their performance.
     """
+    global results
     models = {}
-    results = {}
+    results.clear()  # Clear previous results
     
     # Attempt to load your trained models
     try:
         # Load your trained models (update paths as needed)
-        models["Skip-gram"] = KeyedVectors.load("models/skipgram_model.model")
-        models["CBOW"] = KeyedVectors.load("models/cbow_model.model")
+        models["Skip-gram"] = KeyedVectors.load("models/skipgram_model.model").wv
+        models["CBOW"] = KeyedVectors.load("models/cbow_model.model").wv
         
         # Load pre-trained models
         # Download these beforehand, or update the paths
         # Example paths (update these):
         glove_path = "models/glove-wiki-gigaword-100.txt"
-        google_news_path = "models/GoogleNews-vectors-negative100.bin"
+        fasttext_path = "models/fasttext-wiki-news-subwords-300.vec"
         
         # Update based on which pre-trained models you're using
         models["GloVe"] = load_pretrained_embeddings(glove_path, binary=False)
-        models["Google News"] = load_pretrained_embeddings(google_news_path, binary=True)
+        models["FastText"] = load_pretrained_embeddings(fasttext_path, binary=True)
         
     except Exception as e:
         print(f"Error loading models: {e}")
@@ -179,6 +183,7 @@ def compare():
     
     # Query 4: Word similarities across domains
     query4 = "Similarity pairs"
+    results[query4] = {}
     word_pairs = [
         ("doctor", "hospital"),
         ("teacher", "school"),
@@ -186,7 +191,6 @@ def compare():
         ("chef", "restaurant"),
         ("programmer", "computer")
     ]
-    results[query4] = {}
     for model_name, model in models.items():
         pair_results = {}
         for word1, word2 in word_pairs:
@@ -196,6 +200,7 @@ def compare():
     # Query 5: Finding analogy completions
     # Example: man is to woman as king is to ?
     query5 = "Analogies"
+    results[query5] = {}
     analogies = [
         ("man", "woman", "king", "?"),
         ("good", "better", "bad", "?"),
@@ -203,7 +208,6 @@ def compare():
         ("python", "programming", "english", "?"),
         ("earth", "sun", "moon", "?")
     ]
-    results[query5] = {}
     for model_name, model in models.items():
         analogy_results = {}
         for a, b, c, _ in analogies:
@@ -215,48 +219,6 @@ def compare():
             except:
                 analogy_results[f"{a}:{b}::{c}:?"] = ("Error", 0)
         results[query5][model_name] = analogy_results
-    
-    # Display results
-    print("\n=== Embedding Models Comparison Results ===\n")
-    
-    # Display results for each query
-    for query, query_results in results.items():
-        print(f"\n== {query} ==\n")
-        
-        if query == "Similarity pairs" or query == "Analogies":
-            # Special formatting for similarity pairs and analogies
-            data = []
-            headers = ["Pair"] + list(models.keys())
-            
-            if query == "Similarity pairs":
-                for pair in word_pairs:
-                    pair_str = f"{pair[0]}-{pair[1]}"
-                    row = [pair_str]
-                    for model_name in models.keys():
-                        row.append(f"{query_results[model_name][pair_str]:.3f}" if query_results[model_name][pair_str] is not None else "N/A")
-                    data.append(row)
-            else:  # Analogies
-                for analogy in analogies:
-                    analogy_str = f"{analogy[0]}:{analogy[1]}::{analogy[2]}:?"
-                    row = [analogy_str]
-                    for model_name in models.keys():
-                        result = query_results[model_name][analogy_str]
-                        if isinstance(result, tuple):
-                            row.append(f"{result[0]} ({result[1]:.3f})" if isinstance(result[1], float) else result[0])
-                        else:
-                            row.append("N/A")
-                    data.append(row)
-            
-            print(tabulate(data, headers=headers, tablefmt="grid"))
-            
-        else:
-            # Standard formatting for other queries
-            for model_name, model_results in query_results.items():
-                print(f"{model_name}:")
-                if isinstance(model_results, list):
-                    for word, score in model_results:
-                        print(f"  {word}: {score:.3f}")
-                print()
     
     # Save results to CSV files for further analysis
     output_dir = "comparison_results"
@@ -308,6 +270,90 @@ def compare():
             df.to_csv(f"{output_dir}/analogies.csv", index=False)
     
     print(f"\nResults saved to {output_dir}/ directory\n")
+
+def display_most_similar():
+    query = "Most similar to 'computer'"
+    if query in results:
+        print(f"\n== {query} ==\n")
+        for model_name, model_results in results[query].items():
+            print(f"{model_name}:")
+            for word, score in model_results:
+                print(f"  {word}: {score:.3f}")
+            print()
+    else:
+        print("No results available. Please run the comparison first by selecting option 4.")
+
+def display_vector_arithmetic():
+    query = "Vector arithmetic: france - paris + berlin"
+    if query in results:
+        print(f"\n== {query} ==\n")
+        for model_name, model_results in results[query].items():
+            print(f"{model_name}:")
+            for word, score in model_results:
+                print(f"  {word}: {score:.3f}")
+            print()
+    else:
+        print("No results available. Please run the comparison first by selecting option 4.")
+
+def display_semantic_field():
+    query = "Semantic field: technology, innovation, digital"
+    if query in results:
+        print(f"\n== {query} ==\n")
+        for model_name, model_results in results[query].items():
+            print(f"{model_name}:")
+            for word, score in model_results:
+                print(f"  {word}: {score:.3f}")
+            print()
+    else:
+        print("No results available. Please run the comparison first by selecting option 4.")
+
+def display_word_similarity():
+    query = "Similarity pairs"
+    if query in results:
+        print(f"\n== {query} ==\n")
+        data = []
+        headers = ["Pair"] + list(results[query].keys())
+        for pair in [
+            ("doctor", "hospital"),
+            ("teacher", "school"),
+            ("pilot", "airplane"),
+            ("chef", "restaurant"),
+            ("programmer", "computer")
+        ]:
+            pair_str = f"{pair[0]}-{pair[1]}"
+            row = [pair_str]
+            for model_name in results[query].keys():
+                row.append(f"{results[query][model_name][pair_str]:.3f}" if results[query][model_name][pair_str] is not None else "N/A")
+            data.append(row)
+        print(tabulate(data, headers=headers, tablefmt="grid"))
+    else:
+        print("No results available. Please run the comparison first by selecting option 4.")
+
+def display_analogies():
+    query = "Analogies"
+    if query in results:
+        print(f"\n== {query} ==\n")
+        data = []
+        headers = ["Analogy"] + list(results[query].keys())
+        for analogy in [
+            ("man", "woman", "king", "?"),
+            ("good", "better", "bad", "?"),
+            ("car", "road", "train", "?"),
+            ("python", "programming", "english", "?"),
+            ("earth", "sun", "moon", "?")
+        ]:
+            analogy_str = f"{analogy[0]}:{analogy[1]}::{analogy[2]}:?"
+            row = [analogy_str]
+            for model_name in results[query].keys():
+                result = results[query][model_name][analogy_str]
+                if isinstance(result, tuple):
+                    row.append(f"{result[0]} ({result[1]:.3f})" if isinstance(result[1], float) else result[0])
+                else:
+                    row.append("N/A")
+            data.append(row)
+        print(tabulate(data, headers=headers, tablefmt="grid"))
+    else:
+        print("No results available. Please run the comparison first by selecting option 4.")
 
 # If this file is run directly, execute the compare function
 if __name__ == "__main__":

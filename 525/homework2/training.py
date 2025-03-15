@@ -21,6 +21,14 @@ def train_cbow(processed_dataset, vector_size=100, window=5, min_count=5):
     Returns:
         cbow_model
     """
+    save_path = 'models/cbow_model.model'
+    
+    # Check if the model already exists
+    if os.path.exists(save_path):
+        print(f"CBOW model already exists at {save_path}. Loading the model...")
+        cbow_model = Word2Vec.load(save_path)
+        print("CBOW model loaded successfully.")
+        return cbow_model
 
     # Extract processed tokens
     sentences = processed_dataset['train']['processed_tokens']
@@ -35,7 +43,6 @@ def train_cbow(processed_dataset, vector_size=100, window=5, min_count=5):
                          sg=0)  # sg=0 for CBOW
     
     # Save the model
-    save_path = 'models/cbow_model.model'
     cbow_model.save(save_path)
     print(f"CBOW model saved to {save_path}")
         
@@ -55,6 +62,15 @@ def train_skipgram(processed_dataset, vector_size=100, window=5, min_count=5):
     Returns:
         skipgram_model
     """
+    save_path = 'models/skipgram_model.model'
+    
+    # Check if the model already exists
+    if os.path.exists(save_path):
+        print(f"Skip-gram model already exists at {save_path}. Loading the model...")
+        skipgram_model = Word2Vec.load(save_path)
+        print("Skip-gram model loaded successfully.")
+        return skipgram_model
+
     # Extract processed tokens
     sentences = processed_dataset['train']['processed_tokens']
     
@@ -68,12 +84,12 @@ def train_skipgram(processed_dataset, vector_size=100, window=5, min_count=5):
                              sg=1)  # sg=1 for Skip-gram
     
     # Save the model
-    save_path = 'models/skipgram_model.model'
     skipgram_model.save(save_path)
     print(f"Skip-gram model saved to {save_path}")
     
     return skipgram_model
 
+# load a model
 def load_model(model_path):
     """
     Load a Word2Vec model from a file
