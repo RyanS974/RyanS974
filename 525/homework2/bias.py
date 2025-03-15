@@ -8,23 +8,25 @@ from wefe.word_embedding_model import WordEmbeddingModel
 import pandas as pd
 import numpy as np
 
+# Function to evaluate bias using the WEAT metric
 def evaluate_bias():
-    # Load your word embedding models using Gensim
+    # Load word embedding models using Gensim
     model_paths = [
-        "models/cbow_model.model",  # Path to your CBOW model trained on Wikipedia
-        "models/skipgram_model.model",  # Path to your Skip-Gram model trained on Wikipedia
-        "models/glove-wiki-gigaword-100.txt",  # Path to your GloVe pre-trained model
-        "models/fasttext-wiki-news-subwords-300.vec"  # Path to your FastText pre-trained model
+        "models/cbow_model.model", 
+        "models/skipgram_model.model", 
+        "models/glove-wiki-gigaword-100.txt", 
+        "models/fasttext-wiki-news-subwords-300.vec" 
     ]
     
     # Load models using Gensim
     gensim_models = []
     model_names = ["CBOW", "Skip-gram", "GloVe", "FastText"]
     
+    # for each model path, try to load the model
     for i, path in enumerate(model_paths):
         try:
             if path.endswith('.model'):
-                # For your trained models
+                # For trained models
                 model = KeyedVectors.load(path)
                 # If it's a Word2Vec model, get the word vectors
                 if hasattr(model, 'wv'):
@@ -45,6 +47,7 @@ def evaluate_bias():
             print("Skipping this model and continuing...")
             continue
     
+    # Check if any models were successfully loaded
     if not gensim_models:
         print("No models were successfully loaded. Cannot evaluate bias.")
         return
@@ -184,6 +187,7 @@ def evaluate_bias():
             else:
                 print(f"  {set_name}: All words found in vocabulary")
 
+# Helper function to interpret the WEAT score
 def interpret_weat_score(score):
     """Provide a simple interpretation of the WEAT score"""
     if score > 1.0:
@@ -201,5 +205,6 @@ def interpret_weat_score(score):
     else:
         return "Strong female-science bias"
 
+# Dunder method to run the script
 if __name__ == "__main__":
     evaluate_bias()
