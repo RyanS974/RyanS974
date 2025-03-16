@@ -130,15 +130,13 @@ def compare():
     models = {}
     results.clear()  # Clear previous results
     
-    # Attempt to load your trained models
+    # Attempt to load trained models
     try:
-        # Load your trained models (update paths as needed)
+        # Load trained models (update paths as needed)
         models["Skip-gram"] = KeyedVectors.load("models/skipgram_model.model").wv
         models["CBOW"] = KeyedVectors.load("models/cbow_model.model").wv
         
         # Load pre-trained models
-        # Download these beforehand, or update the paths
-        # Example paths (update these):
         glove_path = "models/glove-wiki-gigaword-100.txt"
         fasttext_path = "models/fasttext-wiki-news-subwords-300.vec"
         
