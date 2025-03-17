@@ -25,6 +25,56 @@ FastText Wiki News Subword 300 has subwords, for one point, which the wikipedia 
 
 CBoW finds the probability of a word given its context, compared to skip-gram which finds the probability of a context given a word.  I mentioned this briefly earlier, but I wanted to rephrase it and give somewhat more detail.  CBoW is faster to train, and is better for frequent words, while skip-gram is better for infrequent words.  Skip-gram is also better for small datasets.  A Bag of Words is a vector of the number of unique words being the dimensionality, and each value is the number of occurrences of that word.  In a corpus of multiple documents, with CBoW, the training on a document is done by averaging the vectors of the words in the document.  If a document has 25 words, and each vector is 30 dimensions, potentially sparse if it is Bag of Words, the nth index of the vector for all 25 words will be averaged, for all the elements of the vector.  We will now have a single vector for each document, and the example we gave, would be 30 dimensions.  If we have 5 documents in the corpus, we have 5 vectors now.
 
+# Preprocessing
+
+Here is the main preprocessing code:
+
+```python
+# preprocess the dataset
+def preprocess_text(text):
+    """
+    Basic text preprocessing for word embeddings
+    
+    Args:
+        text (str): Input text
+        
+    Returns:
+        list: List of preprocessed tokens
+    """
+    # Convert to lowercase
+    text = text.lower()
+    
+    # Remove URLs
+    text = re.sub(r'https?://\S+|www\.\S+', '', text)
+    
+    # Remove HTML tags
+    text = re.sub(r'<.*?>', '', text)
+    
+    # Remove special characters and digits
+    text = re.sub(r'[^a-zA-Z\s]', '', text)
+    
+    # Tokenize
+    tokens = word_tokenize(text)
+    
+    # Remove stopwords
+    stop_words = set(stopwords.words('english'))
+    tokens = [token for token in tokens if token not in stop_words]
+
+    # Remove very short tokens
+    tokens = [token for token in tokens if len(token) > 1]
+    return tokens
+```
+
+- lowercase
+- url removal
+- html tag removal
+- special characters and digits removal
+- tokenize
+- stopword removal
+- tokens of length 1 removed
+
+The above list is of our preprocessing, which is a standard formula.  NLTK is used for much of it, including the downloading of the punkt and stopwords files.  Punkt is for tokenization and stopwords is for stopwords of course.  Some standard regex patterns are used with the re (regex) python module, and lowercasing is done with the string classes lower() method.  A few for loops are used in the stopwords removal and token length of 1 removal.
+
 ## The Two Variations of Embeddings Trained
 
 Above in the intro to this section I covered quite a bit.  I will now more briefly cover the key points of the Homework assignment pdf that are to be included in the report.  The two variations trained are CBoW and Skip-Gram.  Gensim was used for these.  They both use the Word2Vec model also.  The main differences between them are that CBoW predicts a word given a context, and Skip-Gram predicts a context (group of words) given a word.  CBoW is more for more frequent words, Skip-Gram for more rare words.  CBoW is faster to train, and Skip-Gram is better for small datasets.  The two models are trained on the Simple English Wikipedia dataset.
