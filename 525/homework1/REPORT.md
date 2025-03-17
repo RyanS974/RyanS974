@@ -261,6 +261,8 @@ This table is of the three topics generated, along with ten words and their prob
 
 ![Topic Modeling](_images/topic_modeling/topic-modeling.png)
 
+I haven't spoken much about LDA, so I will comment some here.  It is technically an unsupervised learning based topic modeling technique.  It is based on the concept of probability distributions.  It is a generative model, which means it is based on the idea of generating data.  It is based on the idea of a document being a mixture of topics, and a topic being a mixture of words.  To give an example of what it isn't: binary classification, in something like logistic regression.  We might have two classes in this scenario, class 1 and class 2, of various words.  We might want to label samples as potentially spam or not.  This isn't topic modeling with LDA. This would be supervised learning.  With LDA unsupervised learning the LDA component is intended to essentially make the topics, and then we label them.  LDA itself does not provide labels, it discovers statistical patterns.
+
 ### Experimentation
 
 #### Experimentation with Normalization
