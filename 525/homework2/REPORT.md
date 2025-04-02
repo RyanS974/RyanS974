@@ -7,6 +7,8 @@ This is the report for the third homework assignment on word embeddings
 
 Here is the report broken into four sections: embeddings, bias, classification, and reflection.  The embeddings section will discuss the embeddings that I used, the bias section will discuss the bias that I found, the classification section will discuss the classification that I did, and the reflection section will discuss what I learned from this assignment.
 
+Generative AI statement: I mainly use generative ai as a reference and dictionary of sorts.  I lookup functions, classes, libraries, etc, and also get example usages of them, in regard to the reference aspect.  The dictionary aspect, or encyclopedia of softs, is usage learning about concepts, or clarifying concepts.  I try to be more on the vague side in prompts, not seeking direct solutions, but seeking to understand the concepts or how a library works programmatically.
+
 # Embeddings
 
 Other than the standard two embeddings of CBoW and skip-gram, I also used the GloVe embeddings for on of the other options, and the FastText Wiki News embeddings for the last option.  I used the gensim library to download the embeddings, and then used the embeddings in the same way as the other two embeddings.
