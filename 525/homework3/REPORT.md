@@ -82,8 +82,8 @@ For the zero-shot classification I used exaone 3.5 from LG and granite 3.2 from 
 - More specific information on the training data, parameters, and training hardware is limited to the public (if it is available, I couldn't find it).
 - It is built with a focus on multimodality.
 
-- The specific version I used was 7.8 billion parameters.  It is a smaller version of the model, which is designed to be more efficient and faster than the larger versions.
-- This version is 4.8gb in size and is designed to be run on a single GPU.
+- *The specific version I used was 7.8 billion parameters.  It is a smaller version of the model, which is designed to be more efficient and faster than the larger versions.*
+- *This version is 4.8gb in size and is designed to be run on a single GPU.*
 
 ## Granite 3.2:
 
@@ -97,8 +97,8 @@ For the zero-shot classification I used exaone 3.5 from LG and granite 3.2 from 
 - The training data includes a focus on coding, and general language understanding.
 - Like Exaone 3.5, the exact hardware configurations used for pretraining are not widely publicized, but given the model size, it is safe to say they are extensive GPU clusters.
 
-- **The specific version I used was 8 billion parameters.**
-- **This version is 4.9gb in size and is designed to be run on a single GPU.**
+- *The specific version I used was 8 billion parameters.*
+- *This version is 4.9gb in size and is designed to be run on a single GPU.*
 
 ## Talbe of more zero-shot model information
 
