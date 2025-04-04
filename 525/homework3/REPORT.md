@@ -50,7 +50,7 @@ DistilBERT and T5 are the fine-tuning models.
 
 DistilBERT has 66 million parameters.  It is a smaller, faster, cheaper, and lighter version of BERT.  It is a transformer-based model that uses the same architecture as BERT but with fewer parameters.  It was pre-trained on the same dataset as BERT, which is the BookCorpus and English Wikipedia.
 
-The fine-tuning approach used was:
+The fine-tuning approach used was :
 - Hyperparameters: learning rate of 2e-5, batch size of 16, and 3 epochs.
 - Training time: 
 - Hardware used: M4 Macmini with 24gb of RAM.
@@ -59,7 +59,7 @@ The fine-tuning approach used was:
 
 T5-small has 60 million parameters.  It is a transformer-based model that uses the same architecture as BERT but with a different pre-training objective.  It was pre-trained on the C4 dataset, which is a large-scale web corpus.
 
-The fine-tuning approach used was:
+The fine-tuning approach used was :
 - Hyperparameters: learning rate of 2e-5, batch size of 16, and 3 epochs. (same as DistilBERT)
 - Training time: 
 - Hardware used: M4 Macmini with 24gb of RAM.
