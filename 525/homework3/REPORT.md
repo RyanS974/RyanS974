@@ -28,8 +28,8 @@ The inputs are SMS text messages in English, real and non-encoded.  The messages
 
 The evaluation metrics for this binary classification task are:
 - **Accuracy**: Provides an overall measure of correct predictions but can be misleading due to class imbalance.
-- **Precision**: In the spam classification example, precision measures the fraction of emails classified as spam that were actually spam. This is important to ensure that legitimate messages aren't incorrectly filtered.
-- **Recall**: In the spam classification example, recall measures the fraction of spam emails that were correctly classified as spam. This tells us how effective our model is at catching all spam.
+- **Precision**: In the spam classification example, precision measures the fraction of emails classified as spam that were actually spam. This is important to ensure that legitimate messages aren't incorrectly filtered.  Total positive correctly predicted in relation to total positive.
+- **Recall**: In the spam classification example, recall measures the fraction of spam emails that were correctly classified as spam. This tells us how effective our model is at catching all spam.  Total positive correctly predicted in relation to toal attempted.
 - **F1-Score**: Since the imbalanced nature of the dataset (more ham than spam), F1-score is particularly relevant.  The F1 score is the harmonic mean of precision and recall. This metric somewhat balances the importance of precision and recall, and is preferred to accuracy for class-imbalanced datasets.
 
 These are the standard four machine learning metrics for binary classification.  The F1-score is particularly relevant for this dataset because it is imbalanced, with 86.6% ham messages and only 13.4% spam messages.  The F1-score is a better metric than accuracy in this case because of the class imbalance.
@@ -57,7 +57,7 @@ The fine-tuning approach used was:
 - Optimization technique: AdamW optimizer with weight decay.
 - Data preprocessing: AutoTokenizer from HuggingFace was used to tokenize the data.  The data was also padded and truncated to a maximum length of 128 tokens.
 
-T5 has 220 million parameters.  It is a transformer-based model that uses the same architecture as BERT but with a different pre-training objective.  It was pre-trained on the C4 dataset, which is a large-scale web corpus.
+T5-small has 60 million parameters.  It is a transformer-based model that uses the same architecture as BERT but with a different pre-training objective.  It was pre-trained on the C4 dataset, which is a large-scale web corpus.
 
 The fine-tuning approach used was:
 - Hyperparameters: learning rate of 2e-5, batch size of 16, and 3 epochs. (same as DistilBERT)
