@@ -85,9 +85,9 @@ def tfidf_representation(app_data):
 
 def train_logistic_regression(app_data):
     """
-    Train a logistic regression classifier using the TF-IDF representation (weighted BoW, essentially).
+    Train a logistic regression classifier using the TF-IDF representation.
     """
-    print("\nTraining Logistic Regression classifier (essentially a weighted BoW)...")
+    print("\nTraining Logistic Regression classifier...")
     
     # Check if TF-IDF representation is available
     if app_data["baselines"]["tfidf_representation"] is None:
@@ -475,5 +475,333 @@ def compare_baselines(app_data):
         print(f"Difference from best baseline: {best_zs_f1 - models[best_model]:.4f}")
     
     print("\n==========================================\n")
+    
+
+
+
+# ===========================================================
+# extra LR features (BoW model, combo model, and comparisons)
+# ===========================================================
+
+def train_logistic_regression_bow(app_data):
+    """
+    Train a logistic regression classifier using pure Bag-of-Words representation.
+    """
+    print("\nTraining Logistic Regression classifier (pure BoW)...")
+    
+    # Check if BoW representation is available
+    if app_data["baselines"]["bow_representation"] is None:
+        print("Error: BoW representation not found. Please create the BoW representation first.")
+        return app_data
+    
+    # Get the BoW transformed training data
+    X_train_bow = app_data["baselines"]["bow_representation"]["X_train"]
+    
+    # Get the training labels
+    y_train = app_data["dataset"]["training_set"]["label"]
+    
+    # Initialize and train the logistic regression model
+    model = LogisticRegression(max_iter=1000, random_state=42, C=1.0)
+    print("Fitting pure BoW logistic regression model...")
+    model.fit(X_train_bow, y_train)
+    
+    # Store the model in app_data
+    app_data["baselines"]["pure_bow_model"] = model
+    
+    print("Pure BoW Logistic Regression classifier trained successfully.")
+    
+    return app_data
+
+
+def test_logistic_regression_bow(app_data):
+    """
+    Test the pure BoW logistic regression classifier on the test set.
+    """
+    print("\nTesting pure BoW Logistic Regression classifier...")
+    
+    # Check if model and BoW representation are available
+    if app_data["baselines"]["pure_bow_model"] is None:
+        print("Error: Pure BoW model not found. Please train the model first.")
+        return app_data
+    
+    if app_data["baselines"]["bow_representation"] is None:
+        print("Error: BoW representation not found. Please create the BoW representation first.")
+        return app_data
+    
+    # Get the model and BoW transformed test data
+    model = app_data["baselines"]["pure_bow_model"]
+    X_test_bow = app_data["baselines"]["bow_representation"]["X_test"]
+    
+    # Get the test labels
+    y_test = app_data["dataset"]["test_set"]["label"]
+    
+    # Make predictions
+    print("Making predictions...")
+    y_pred = model.predict(X_test_bow)
+    
+    # Calculate metrics
+    accuracy = accuracy_score(y_test, y_pred)
+    precision = precision_score(y_test, y_pred)
+    recall = recall_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred)
+    
+    # Store the results in app_data
+    app_data["baselines"]["pure_bow_results"] = {
+        "accuracy": accuracy,
+        "precision": precision,
+        "recall": recall,
+        "f1": f1
+    }
+    
+    print("Pure BoW Logistic Regression testing completed.")
+    
+    return app_data
+
+
+def results_logistic_regression_bow(app_data):
+    """
+    Display the results of the pure BoW logistic regression classifier.
+    """
+    print("\n========== Pure BoW Logistic Regression Results ==========")
+    
+    if app_data["baselines"]["pure_bow_results"] is None:
+        print("No results found. Please test the model first.")
+        return app_data
+    
+    results = app_data["baselines"]["pure_bow_results"]
+    
+    print(f"Accuracy:  {results['accuracy']:.4f}")
+    print(f"Precision: {results['precision']:.4f}")
+    print(f"Recall:    {results['recall']:.4f}")
+    print(f"F1 Score:  {results['f1']:.4f}")
+    print("==========================================================\n")
+    
+    return app_data
+
+
+def train_logistic_regression_combination(app_data, bow_weight=0.5):
+    """
+    Train a logistic regression classifier using a combination of BoW and TF-IDF features.
+    
+    Parameters:
+    -----------
+    app_data : dict
+        The application data dictionary
+    bow_weight : float, default=0.5
+        Weight given to the BoW features. TF-IDF features get (1 - bow_weight)
+    """
+    print(f"\nTraining Logistic Regression classifier (Combined BoW & TF-IDF, BoW weight: {bow_weight})...")
+    
+    # Check if both representations are available
+    if app_data["baselines"]["bow_representation"] is None:
+        print("Error: BoW representation not found. Please create the BoW representation first.")
+        return app_data
+    
+    if app_data["baselines"]["tfidf_representation"] is None:
+        print("Error: TF-IDF representation not found. Please create the TF-IDF representation first.")
+        return app_data
+    
+    # Import required libraries for matrix operations
+    from scipy import sparse
+    
+    # Get the feature matrices
+    X_train_bow = app_data["baselines"]["bow_representation"]["X_train"]
+    X_train_tfidf = app_data["baselines"]["tfidf_representation"]["X_train"]
+    
+    # Normalize the matrices if they're not already normalized
+    from sklearn.preprocessing import normalize
+    X_train_bow_norm = normalize(X_train_bow, norm='l2', axis=1)
+    X_train_tfidf_norm = normalize(X_train_tfidf, norm='l2', axis=1)
+    
+    # Create weighted combination
+    X_train_combined = bow_weight * X_train_bow_norm + (1 - bow_weight) * X_train_tfidf_norm
+    
+    # Get the training labels
+    y_train = app_data["dataset"]["training_set"]["label"]
+    
+    # Initialize and train the logistic regression model
+    model = LogisticRegression(max_iter=1000, random_state=42, C=1.0)
+    print("Fitting combined feature logistic regression model...")
+    model.fit(X_train_combined, y_train)
+    
+    # Store the model and weight in app_data
+    app_data["baselines"]["combined_model"] = {
+        "model": model,
+        "bow_weight": bow_weight
+    }
+    
+    print("Combined BoW & TF-IDF Logistic Regression classifier trained successfully.")
+    
+    return app_data
+
+
+def test_logistic_regression_combination(app_data):
+    """
+    Test the combined BoW & TF-IDF logistic regression classifier on the test set.
+    """
+    print("\nTesting combined BoW & TF-IDF Logistic Regression classifier...")
+    
+    # Check if model and representations are available
+    if app_data["baselines"]["combined_model"] is None:
+        print("Error: Combined model not found. Please train the model first.")
+        return app_data
+    
+    if app_data["baselines"]["bow_representation"] is None or app_data["baselines"]["tfidf_representation"] is None:
+        print("Error: BoW or TF-IDF representation not found. Please create both representations first.")
+        return app_data
+    
+    # Import required libraries
+    from scipy import sparse
+    from sklearn.preprocessing import normalize
+    
+    # Get the model and weight
+    model = app_data["baselines"]["combined_model"]["model"]
+    bow_weight = app_data["baselines"]["combined_model"]["bow_weight"]
+    
+    # Get the test feature matrices
+    X_test_bow = app_data["baselines"]["bow_representation"]["X_test"]
+    X_test_tfidf = app_data["baselines"]["tfidf_representation"]["X_test"]
+    
+    # Normalize the matrices
+    X_test_bow_norm = normalize(X_test_bow, norm='l2', axis=1)
+    X_test_tfidf_norm = normalize(X_test_tfidf, norm='l2', axis=1)
+    
+    # Create weighted combination
+    X_test_combined = bow_weight * X_test_bow_norm + (1 - bow_weight) * X_test_tfidf_norm
+    
+    # Get the test labels
+    y_test = app_data["dataset"]["test_set"]["label"]
+    
+    # Make predictions
+    print("Making predictions...")
+    y_pred = model.predict(X_test_combined)
+    
+    # Calculate metrics
+    accuracy = accuracy_score(y_test, y_pred)
+    precision = precision_score(y_test, y_pred)
+    recall = recall_score(y_test, y_pred)
+    f1 = f1_score(y_test, y_pred)
+    
+    # Store the results in app_data
+    app_data["baselines"]["combined_results"] = {
+        "accuracy": accuracy,
+        "precision": precision,
+        "recall": recall,
+        "f1": f1
+    }
+    
+    print("Combined BoW & TF-IDF Logistic Regression testing completed.")
+    
+    return app_data
+
+
+def results_logistic_regression_combination(app_data):
+    """
+    Display the results of the combined BoW & TF-IDF logistic regression classifier.
+    """
+    print("\n========== Combined BoW & TF-IDF Logistic Regression Results ==========")
+    
+    if app_data["baselines"]["combined_results"] is None:
+        print("No results found. Please test the model first.")
+        return app_data
+    
+    results = app_data["baselines"]["combined_results"]
+    bow_weight = app_data["baselines"]["combined_model"]["bow_weight"]
+    
+    print(f"BoW weight: {bow_weight}, TF-IDF weight: {1 - bow_weight}")
+    print(f"Accuracy:  {results['accuracy']:.4f}")
+    print(f"Precision: {results['precision']:.4f}")
+    print(f"Recall:    {results['recall']:.4f}")
+    print(f"F1 Score:  {results['f1']:.4f}")
+    print("====================================================================\n")
+    
+    return app_data
+
+
+def compare_all_logistic_regression(app_data):
+    """
+    Compare the results of all three logistic regression models:
+    1. TF-IDF
+    2. Pure BoW
+    3. Combined BoW & TF-IDF
+    """
+    print("\n========== Logistic Regression Models Comparison ==========")
+    
+    # Check if results are available for all models
+    missing_results = []
+    
+    # Check TF-IDF results (named 'bow_results' in app_data)
+    if app_data["baselines"]["bow_results"] is None:
+        missing_results.append("Logistic Regression (TF-IDF)")
+    
+    # Check pure BoW results
+    if app_data["baselines"].get("pure_bow_results") is None:
+        missing_results.append("Logistic Regression (BoW)")
+    
+    # Check combined model results
+    if app_data["baselines"].get("combined_results") is None:
+        missing_results.append("Logistic Regression (Combined)")
+    
+    # If any results are missing, inform the user
+    if missing_results:
+        print(f"Error: Results not found for the following models: {', '.join(missing_results)}")
+        print("Please test all models first before comparing.")
+        return app_data
+    
+    # Get results for all models
+    tfidf_results = app_data["baselines"]["bow_results"]  # Note: misleading name in app_data
+    bow_results = app_data["baselines"]["pure_bow_results"]
+    combined_results = app_data["baselines"]["combined_results"]
+    bow_weight = app_data["baselines"]["combined_model"]["bow_weight"]
+    
+    # Create a comparison table
+    print("\n" + "-" * 90)
+    print(f"| {'Model':<35} | {'Accuracy':<10} | {'Precision':<10} | {'Recall':<10} | {'F1 Score':<10} |")
+    print("|" + "-" * 88 + "|")
+    
+    # Add each model to the table
+    print(f"| {'Logistic Regression (TF-IDF)':<35} | {tfidf_results['accuracy']:<10.4f} | {tfidf_results['precision']:<10.4f} | {tfidf_results['recall']:<10.4f} | {tfidf_results['f1']:<10.4f} |")
+    print(f"| {'Logistic Regression (BoW)':<35} | {bow_results['accuracy']:<10.4f} | {bow_results['precision']:<10.4f} | {bow_results['recall']:<10.4f} | {bow_results['f1']:<10.4f} |")
+    
+    model_name = f"Logistic Regression (Combined {bow_weight:.1f}BoW/{1-bow_weight:.1f}TF-IDF)"
+    print(f"| {model_name:<35} | {combined_results['accuracy']:<10.4f} | {combined_results['precision']:<10.4f} | {combined_results['recall']:<10.4f} | {combined_results['f1']:<10.4f} |")
+    
+    print("-" * 90)
+    
+    # Determine the best model based on F1 score
+    models = {
+        "Logistic Regression (TF-IDF)": tfidf_results['f1'],
+        "Logistic Regression (BoW)": bow_results['f1'],
+        f"Logistic Regression (Combined {bow_weight:.1f}BoW/{1-bow_weight:.1f}TF-IDF)": combined_results['f1']
+    }
+    
+    best_model = max(models, key=models.get)
+    
+    print(f"\nBest performing model: {best_model} with F1 score of {models[best_model]:.4f}")
+    
+    # Calculate performance differences
+    best_f1 = models[best_model]
+    for model_name, f1_score in models.items():
+        if model_name != best_model:
+            diff = best_f1 - f1_score
+            print(f"{best_model} outperforms {model_name} by {diff:.4f} F1 points")
+    
+    # Provide insights based on the results
+    if "TF-IDF" in best_model:
+        print("\nInsight: The TF-IDF weighting scheme appears to provide better discrimination for this dataset.")
+    elif "BoW" in best_model and "Combined" not in best_model:
+        print("\nInsight: Simple term frequency (BoW) appears to be sufficient for this dataset.")
+    elif "Combined" in best_model:
+        print(f"\nInsight: A combination of BoW and TF-IDF (weight ratio {bow_weight:.1f}:{1-bow_weight:.1f}) provides the best performance.")
+    
+    # Storage in app_data (for reference in other comparisons)
+    app_data["baselines"]["lr_comparison_results"] = {
+        "winner": best_model,
+        "tfidf": {"f1": tfidf_results["f1"]},
+        "bow": {"f1": bow_results["f1"]},
+        "combined": {"f1": combined_results["f1"]}
+    }
+    
+    print("\n=======================================================\n")
     
     return app_data

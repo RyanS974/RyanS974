@@ -198,7 +198,7 @@ def main():
                 print("1. BoW") # convert the dataset to a BoW representation
                 print("2. TF-IDF") # convert the dataset to a TF-IDF representation
                 print("   *****")
-                print("3. Train Logistic Regression classifier") # train a logistic regression classifier using the BoW based TF-IDF representations (weighted BoW)
+                print("3. Train Logistic Regression classifier") # train a logistic regression classifier using the TF-IDF representations
                 print("4. Test the Logistic Regression classifier") # test the logistic regression classifier on the test set
                 print("5. Results of the Logistic Regression classifier") # print the results of the logistic regression classifier
                 print("   *****")
@@ -211,15 +211,17 @@ def main():
                 print("11. Results of Majority Class Baseline")
                 print("   *****")
                 print("12. Compare Baselines")
-                print("13. ** Return to previous menu **")
+                print("   *****")
+                print("13. Other Logistic Regression classifiers (BoW and Combination with TF-IDF)") # extra feature of other LR classifiers
+                print("14. ** Return to previous menu **")
                 choice = input("Please enter your choice: ")
 
                 # check if choice is valid
-                if choice not in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13']:
+                if choice not in ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14']:
                     print("Invalid choice. Please try again.")
                     continue
                 # check if choice is return to previous menu
-                if choice == '13':
+                if choice == '14':
                     print("Returning to previous menu...")
                     break
 
@@ -234,7 +236,7 @@ def main():
                     baselines.tfidf_representation(dataset.app_data)
                 # choice 3, train Logistic Regression classifier
                 elif choice == '3':
-                    # train a logistic regression classifier using the BoW and TF-IDF representations
+                    # train a logistic regression classifier using TF-IDF representations
                     baselines.train_logistic_regression(dataset.app_data)
                 # choice 4, test Logistic Regression classifier
                 elif choice == '4':
@@ -272,6 +274,61 @@ def main():
                 elif choice == '12':
                     # compare Baselines
                     baselines.compare_baselines(dataset.app_data)
+                elif choice == '13':
+                    # extra feature of other LR classifiers
+                    while True:
+                        print("Other Logistic Regression classifiers menu:")
+                        print("1. Train Logistic Regression (BoW)")                        
+                        print("2. Test Logistic Regression (BoW)")
+                        print("3. Results of Logistic Regression (BoW)")
+                        print("   *****")
+                        print("4. Train Logistic Regression (Combination of BoW and TF-IDF)")
+                        print("5. Test Logistic Regression (Combination of BoW and TF-IDF)")
+                        print("6. Results of Logistic Regression (Combination of BoW and TF-IDF)")
+                        print("   *****")
+                        print("7. Compare all three LR classifiers, BoW, TF-IDF and Combination")
+                        print("8. ** Return to previous menu **")
+
+                        choice = input("Please enter your choice: ")
+
+                        # check if choice is valid
+                        if choice not in ['1', '2', '3', '4', '5', '6', '7', '8']:
+                            print("Invalid choice. Please try again.")
+                            continue
+                        # check if choice is return to previous menu
+                        if choice == '8':
+                            print("Returning to previous menu...")
+                            break
+
+                        # call functions based on choice
+                        # choice 1, train Logistic Regression (BoW)
+                        if choice == '1':
+                            # train Logistic Regression (BoW)
+                            baselines.train_logistic_regression_bow(dataset.app_data)
+                        # choice 2, test Logistic Regression (BoW)
+                        elif choice == '2':
+                            # test Logistic Regression (BoW)
+                            baselines.test_logistic_regression_bow(dataset.app_data)
+                        # choice 3, results of Logistic Regression (BoW)
+                        elif choice == '3':
+                            # results of Logistic Regression (BoW)
+                            baselines.results_logistic_regression_bow(dataset.app_data)
+                        # choice 4, train Logistic Regression (Combination of BoW and TF-IDF)
+                        elif choice == '4':
+                            # train Logistic Regression (Combination of BoW and TF-IDF)
+                            baselines.train_logistic_regression_combination(dataset.app_data)
+                        # choice 5, test Logistic Regression (Combination of BoW and TF-IDF)
+                        elif choice == '5':
+                            # test Logistic Regression (Combination of BoW and TF-IDF)
+                            baselines.test_logistic_regression_combination(dataset.app_data)
+                        # choice 6, results of Logistic Regression (Combination of BoW and TF-IDF)
+                        elif choice == '6':
+                            # results of Logistic Regression (Combination of BoW and TF-IDF)
+                            baselines.results_logistic_regression_combination(dataset.app_data)
+                        # choice 7, compare all three LR classifiers, BoW, TF-IDF and Combination
+                        elif choice == '7':
+                            # compare all three LR classifiers, BoW, TF-IDF and Combination
+                            baselines.compare_all_logistic_regression(dataset.app_data)                        
 
 # dunder name
 if __name__ == "__main__":
