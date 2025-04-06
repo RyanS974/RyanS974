@@ -104,7 +104,7 @@ For the zero-shot classification I used exaone 3.5 from LG and granite 3.2 from 
 
 Here is some more detailed information on the zero shot models by LG and IBM.  This was the most detailed information I could find on them.
 
-| Metric              | LG Exaone 3.5 (32B)       | IBM Granite 3.2 (8B Instruct / 2B Instruct) |
+| Metric              | LG Exaone 3.5 (32B / 7.8B / 2.4B)       | IBM Granite 3.2 (8B Instruct / 2B Instruct) |
 |---------------------|---------------------------|---------------------------------------------|
 | Model Size          | 32 Billion                | 8 Billion / 2 Billion                       |
 | Training Tokens     | 6.5 Trillion              | 12 Trillion                                 |
@@ -115,13 +115,72 @@ Also, I could not find much training time information, but I found that a simila
 
 I mainly use Granite 3.2 from IBM and Exaone 3.5 from LG.  I have quite a few downloaded, but those are the main ones I use.  They are about 5gb each, and about 8 billion parameters each.  If I want more accuracy, I usually use Microsoft's Phi4 model that is 9.1gb.  I also will use qwen2.5-coder for code specific tasks, with there being a considerable amount of versions.  The smaller versions work well as auto-complete models in IDEs where they don't take up too many resources.  I use those often in VS Code with the Continue extension that supports Ollama.  My machine will not run anything over about 9gb, model wise, with my M4 mac mini having 24gb.  The over 9gb models I have tested are extremely slow and take up a consderable amount more of memory, and don't appear to be just a linear increase in memory usage.
 
+## Technical Aspects of Accessing the LLMs
+
+I use the requests module to access Ollama running as a local server.  I usually use the ollama module api calls, but the requests method was faster and better in this case I think, although it would probably be very similar time-wise.
+
+### Example Ollama Code
+
+Here is an example script for accessing Ollama with the module calls:
+
+```python
+#!/usr/bin/env python3
+import ollama
+
+client = ollama.Client()
+
+response = client.chat(model='llama3.1:8b', messages=[
+    {
+        'role': 'user',
+        'content': 'What are LLMs and NLP, and how are they related in AI?'
+    }
+])
+    
+print(response['message']['content'])
+```
+
+### Example Requests Code
+
+Here is an example of accessing the Ollama local server through the requests module.
+
+```python
+#!/usr/bin/env python3
+import requests
+
+response = requests.post(
+    "http://localhost:11434/api/generate",
+    json={"model": "exaone3.5:latest", "prompt": "What is the Ollama server for LLMs?", "stream": False},
+    timeout=30
+)
+response.raise_for_status()
+result = response.json()
+
+# the response variable from the requests.post() call
+print("\nresponse:\n")
+print(response)  # the entire response object
+print("\nresponse.text:\n")
+print(response.text)  # the raw response text
+
+
+# the result variable which is from converting the response variable to JSON
+print("\nresult:\n")
+print(result)  # the entire result object
+print("\nresult['response']:\n")
+print(result['response'])  # the response content
+
+```
+
 # 4. Baselines
 
-The baseline models are of a Logistic Regression model with a Bag of Words representation and TF-IDF representation.  The random and majority class baselines are also included.  The input features are TF-IDF, which is essentially a weighted Bag of Words, from my understanding.  I first get the Bag of Words representation, and then I get the TF-IDF representation, although they are not really based on each other directly.  I was somewhat confused in the pdf phrasing, as it spoke of a BoW baseline model with an input feature method.  I chose TF-IDF, but the Logistic Regression classifier is only working from the TF-IDF, which I believe is ok.  From my understanding, TF-IDF is considered somewhat of a weighted BoW.  The Logistic Regression model is a simple linear model that is used for binary classification.  It is a good baseline model to use for text classification tasks.
+The baseline model is of a Logistic Regression model with a TF-IDF representation.  The random and majority class baselines are also included.  The input features are TF-IDF.  I first get the Bag of Words representation, and then I get the TF-IDF representation, although they are not really based on each other directly.  I was somewhat confused in the PDF phrasing, as it spoke of a BoW baseline model with an input feature method.  I chose TF-IDF, but the Logistic Regression classifier is only working from the TF-IDF, which I believe is what is wanted.  The Logistic Regression model is a simple linear model that is used for binary classification.  It is a good baseline model to use for text classification tasks.
+
+TF-IDF, or Term Frequency-Inverse Document Frequency, is a numerical statistic used in information retrieval and text mining to reflect how important a word is to a document in a collection or corpus. It's the product of two metrics: term frequency (how often a word appears in a document) and inverse document frequency (how rarely a word is used across all documents).  This is stored similarly to a BoW vector.
+
+Bag of words is a simple but popular way to represent text data for natural language processing tasks. It involves treating a text as an unordered collection of words, disregarding grammar and word order. By converting text into a bag of words, we can analyze the frequency of each word and use it as a feature for machine learning models. It is basically the number of occurrences of a word in a document, stored as a vector where each element is a word representation.
 
 The random baseline is a model that randomly predicts the class of the input.  This is a very simple model that is used to compare against the other models.  The majority class baseline is a model that always predicts the majority class, which in this case is ham.  This is also a very simple model that is used to compare against the other models.
 
-
+I included a few alternate methods for the main baseline just incase something else was wanted: A standard BoW LR model, and a model combing BoW and TF-IDF in a 'weighted' manner.
 
 # 5. Results
 
@@ -133,7 +192,7 @@ Here is the main results table:
 | T5 | 0.9839 | 0.9517 | 0.9262 | 0.9388 |
 | ExaOne 3.5 | 0.8422 | 0.4516 | 0.8456 | 0.5888 |
 | Granite 3.2 | 0.8924 | 0.5668 | 0.8255 | 0.6721 |
-| LR TF-IDF (BoW) Baseline | 0.9776 | 1.0000 | 0.8322 | 0.9084 |
+| LR TF-IDF Baseline | 0.9776 | 1.0000 | 0.8322 | 0.9084 |
 | Random Baseline | 0.7682 | 0.1348 | 0.1356 | 0.1350 |
 | Majority/Target-Class Baseline | 0.8664 | 0.0000 | 0.0000 | 0.0000 |
 
