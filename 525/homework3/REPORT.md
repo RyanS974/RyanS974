@@ -248,7 +248,7 @@ The Granite 3.2 model performed better than the Exaone 3.5 model, with an accura
 
 ## Baselines
 
-For the Logistic Regression baseline section, the random and majority performed as expected.  
+For the Logistic Regression baseline section, the random and majority performed as expected.  I considered the main baseline to be the TF-IDF based one, mainly because the assignment pdf stated to pick an input feature such as this for the BoW related classification baseline model.  This is what is reported in the main results.  I also tested an actual BoW based one, and a combined BoW and TF-IDF one.  They all performed fairly well actually, with the pure BoW model having the highest f1-score.  Here is what I did for the combined method: I normalized both the BoW and TF-IDF vectors (0-1).  I then gave a default weight of 0.5 to each.  Various adjusting of this didn't do that much, adjusting it towards the BoW did increase it, since the BoW alone had the higher f1-score.  With that being said, the combination approach with 50/50 weighting actually performed lower than the TF-IDF, which was surprising.  More analysis will have to be done on this as to why those results happened.  I assumed it would be in the middle.
 
 # Reflection
 
