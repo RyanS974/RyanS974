@@ -28,11 +28,12 @@ This will bring up the main menu, which allows you to navigate through the app.
 
 # Walkthrough
 
-A brief walkthrough with screenshots.
+A brief walkthrough with screenshots.  This is not intended to be very descriptive, but give an example of the menu options and results.  The details and explanations are in the report.
 
 ## Main Menu
 
 ![alt text](screenshots/main-menu.png)
+
 The main menu is the entry point of the application. It provides options to load the dataset, fine-tune models, perform zero-shot classification, and evaluate baselines. The user can select an option by entering the corresponding number.  '6.' here will exit the app.  If you go to one of the other options, you can return to the main menu by entering a corresponding number which is always the last one in the sub-menu.  There is only two menu levels except for one third, which is in baselines.  This is of the standard BoW and a combined BoW TF-IDF LR model.
 
 ## Dataset
