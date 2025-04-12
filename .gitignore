@@ -17,3 +17,22 @@
 
 # ignore directories
 
+/525/homework3/20250403
+/525/homework3/__pycache__
+/525/homework3/_archive
+/525/homework3/models
+525/homework3/pdf.txt
+525/homework3/NLP_Homework_3_W25.pdf
+525/homework3/conclusion.py
+525/homework3/results/comparison_results.json
+525/homework3/results/distilbert/checkpoint-837/config.json
+525/homework3/results/distilbert/checkpoint-837/model.safetensors
+525/homework3/results/distilbert/checkpoint-837/optimizer.pt
+525/homework3/results/distilbert/checkpoint-837/rng_state.pth
+525/homework3/results/distilbert/checkpoint-837/scheduler.pt
+525/homework3/results/distilbert/checkpoint-837/trainer_state.json
+525/homework3/results/distilbert/checkpoint-837/training_args.bin
+525/homework3/results/exaone_results.json
+525/homework3/results/granite_results.json
+525/homework3/test.py
+525/homework3/test2.py
