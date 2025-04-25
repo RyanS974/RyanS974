@@ -125,6 +125,8 @@ The RoBERTa sentiment analysis classifier will output which model is more positi
 
 ![alt text](_images/03-roberta.png "Landing Page")
 
+The results are shown below.
+
 ![alt text](_images/03a-roberta.png "Landing Page")
 
 ## Summary
@@ -132,6 +134,8 @@ The RoBERTa sentiment analysis classifier will output which model is more positi
 The summary tab provides a summary of two of the prompts: the Trump and Harris prompts.  This is hard-coded in the app.  It is text files selectable from a dropdown menu.  The first part of the prompt is the summary from an LLM.  One is from Claude 3.7 and the other ChatGPT o4.  The second part of the text file, below the first, is the actual data given to the LLM, which is of the results from the various analysis options.  A user could copy and paste these in an LLM to get a similar response from their user entered datasets.
 
 ![alt text](_images/04-summary.png "Landing Page")
+
+Below is the summary area filled in after clicking the button with the YOUR DATASET RESULTS selected.
 
 ![alt text](_images/04a-summary.png "Landing Page")
 
@@ -141,6 +145,8 @@ The summary tab provides a summary of two of the prompts: the Trump and Harris p
 This is a hard-coded tab that displays some basic graphs.  The first one is a bar chart of the top words used by each model. This is more for example purposes.  It is not dynamic like the other two, which are for n-grams and the VADER classifier.  Those dynamically generate charts based on the dataset, whether a built-in one or user entered.
 
 ![alt text](_images/05-visuals.png "Landing Page")
+
+Below is the chart.
 
 ![alt text](_images/05a-visuals.png "Landing Page")
 
