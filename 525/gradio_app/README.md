@@ -133,12 +133,17 @@ The results are shown below.
 
 The summary tab provides a summary of two of the prompts: the Trump and Harris prompts.  This is hard-coded in the app.  It is text files selectable from a dropdown menu.  The first part of the prompt is the summary from an LLM.  One is from Claude 3.7 and the other ChatGPT o4.  The second part of the text file, below the first, is the actual data given to the LLM, which is of the results from the various analysis options.  A user could copy and paste these in an LLM to get a similar response from their user entered datasets.
 
+The left has an example prompt to send to the LLM.  You would copy and past that first, giving the LLM instructions on what the proceding text is, which is the results in the right text box, which you want to copy and paste into the LLM.  There are two build-in responses in that drop down list box.  One from Harris, and the from Trump.  I think it is very interesting seeing the views and interpretations by ChatGPT and Claude on this.  It helps distinguish the two models.  
+
+I mention elsewhere here in this guide that there are various reasons I did not implement an LLM in the app, which I believe was a good choice given the situation.  Copying and pasting the data over to an LLM of your choice is a simple process also. 
+
 ![alt text](_images/04-summary.png "Landing Page")
 
 Below is the summary area filled in after clicking the button with the YOUR DATASET RESULTS selected.
 
 ![alt text](_images/04a-summary.png "Landing Page")
 
+IMPORTANT NOTE: If you want to use another dataset, and create it, you need to restart the space first.  Currently, the summary tab with the appended results does not clear out automatically.  This is a basic addition that in retrospect I should have added.  I will most likely add it, so when you test the app it might aleady be there.  If not, just restart the space to work with another dataset.  
 
 ## Visuals
 
