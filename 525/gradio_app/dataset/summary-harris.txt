@@ -1,0 +1,118 @@
+Response by ChatGPT on Kamala Harris' political views. 
+
+These metrics paint a clear picture of how the two models diverge in style, content focus, and subtle bias—even when answering the exact same question. Here’s what stands out:
+
+**1. Vocabulary and Focus**  
+- **ExaOne3.5** emphasizes concrete policy terms:  
+  - *Top words*: “policy,” “trade,” “agreement,” “immigration,” “order”  
+  - *Top 2-grams*: “tax cuts,” “climate change,” “executive orders,” “free trade,” “law order”  
+  This suggests ExaOne zeroes in on Trump’s signature policy moves (tariffs, deregulation, climate skepticism), using fairly specialized language.  
+- **Granite3.2** leans more on context and framing:  
+  - *Top words*: “trump,” “administration,” “agreement,” “ban,” “stance”  
+  - *Top 2-grams*: “administration took,” “foreign policy,” “social issues,” “45th president”  
+  Granite frames Trump within his role and major actions (“the administration did X”), giving slightly broader context rather than drilling immediately into specific policy terms.
+
+**2. Overlap and Distinctiveness**  
+- **Cosine similarity (0.58)** indicates moderate overlap in word‐frequency patterns—so you’ll see some of the same building blocks in both outputs.  
+- **Jaccard similarity (0.16)** is quite low, meaning there’s relatively little exact word overlap. In practice that means each model brings plenty of unique phrasing to the table.  
+- **Semantic similarity (0.45)** tells us they aren’t strongly aligned in the ideas they emphasize; you’ll get different “angles” on Trump’s politics.
+
+**3. Bias Signals**  
+- ExaOne3.5 shows a slight conservative tilt: it uses more “conservative” buzzwords (e.g. freedom, deregulation, security) and even repeats “traditional” twice, whereas Granite3.2 is tagged as more balanced, with only one conservative term flagged and one liberal (“climate”).  
+- A **0.20/1.0 bias-difference score** is small but perceptible—so if you need a truly neutral rundown, Granite3.2 edges out ExaOne.
+
+**4. Tone & Complexity**  
+- Both answers are **informal** and carry a **positive** sentiment overall, but:  
+  - **ExaOne3.5** is rated **complex**—you’ll find longer sentences, more technical terms, denser explanations.  
+  - **Granite3.2** is **average** in complexity, favoring smoother readability.  
+- Sentiment scores reflect this: Granite3.2 (0.15) comes across slightly more upbeat than ExaOne3.5 (–0.12), even though both land in the “neutral” zone.
+
+---
+
+### What This Means for You
+- **If you want depth and policy minutiae**, ExaOne3.5 delivers more technical detail on things like tax cuts, trade agreements, and executive actions—albeit with a faint conservative slant and denser prose.
+- **If you prefer clear, balanced context**, Granite3.2 frames Trump’s views around his presidential role and major initiatives in a more neutral tone and with easier readability.
+- **Neither model is radically biased**, but choice matters if you’re aiming for absolutely even-handed coverage vs. a slightly more policy-driven sketch.
+
+By weighing those trade-offs—complexity vs. simplicity, policy details vs. broader context, and slight bias differences—you can pick the LLM whose style best matches your audience and goals.
+
+
+
+
+
+
+
+ACTUAL ANALYSIS RESULTS
+
+Analysis Results
+Analysis of Prompt: "Tell me about the political views of Kamala Harris...."
+Comparing responses from ExaOne3.5 and Granite3.2
+Top Words Used by ExaOne3.5
+harris (8), policy (8), justice (5), attorney (4), issue (4), measure (4), political (4), aimed (3), approach (3), general (3)
+
+Top Words Used by Granite3.2
+harris (7), support (6), view (6), issue (5), right (5), policy (4), party (3), political (3), president (3), progressive (3)
+
+Similarity Metrics
+Cosine Similarity: 0.67 (higher means more similar word frequency patterns)
+Jaccard Similarity: 0.22 (higher means more word overlap)
+Semantic Similarity: 0.53 (higher means more similar meaning)
+Common Words: 71 words appear in both responses
+
+Analysis Results
+Analysis of Prompt: "Tell me about the political views of Kamala Harris...."
+2-grams Analysis: Comparing responses from ExaOne3.5 and Granite3.2
+Top 2-grams Used by ExaOne3.5
+attorney general (3), social justice (3), centrist approach (2), climate change (2), criminal justice (2), gun control (2), human rights (2), justice issues (2), measures like (2), middle class (2)
+
+Top 2-grams Used by Granite3.2
+political views (3), vice president (3), criminal justice (2), democratic party (2), foreign policy (2), harris advocated (2), lgbtq rights (2), president harris (2), social issues (2), 2019 proposed (1)
+
+Similarity Metrics
+Common 2-grams: 24 2-grams appear in both responses
+
+Analysis Results
+Analysis of Prompt: "Tell me about the political views of Kamala Harris...."
+Bias Analysis: Comparing responses from ExaOne3.5 and Granite3.2
+Bias Detection Summary
+Partisan Leaning: ExaOne3.5 appears liberal, while Granite3.2 appears liberal. (Minor difference)
+
+Overall Assessment: Analysis shows a 0.15/1.0 difference in bias patterns. (Minor overall bias difference)
+
+Partisan Term Analysis
+ExaOne3.5:
+
+Liberal terms: progressive, progressive, progressive, climate, climate, reform, justice, justice, justice, justice, justice
+Conservative terms: values, security
+Granite3.2:
+
+Liberal terms: progressive, progressive, progressive, climate, reform, justice, justice
+Conservative terms: None detected
+
+Analysis Results
+Analysis of Prompt: "Tell me about the political views of Kamala Harris...."
+Classifier Analysis for ExaOne3.5 and Granite3.2
+Classification Results
+ExaOne3.5:
+
+Formality: Informal
+Sentiment: Positive
+Complexity: Complex
+Granite3.2:
+
+Formality: Neutral
+Sentiment: Positive
+Complexity: Average
+Classification Comparison
+Formality: Model 1 is informal, while Model 2 is neutral
+Complexity: Model 1 uses complex language, while Model 2 uses average language
+
+RoBERTa Sentiment Analysis Results
+Sentiment Analysis Results
+ExaOne3.5 is more positive than Granite3.2
+
+ExaOne3.5
+Sentiment: positive (Score: 0.52)
+
+Granite3.2
+Sentiment: neutral (Score: 0.37)
