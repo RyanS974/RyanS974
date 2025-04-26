@@ -22,6 +22,7 @@ Here is a link to the video demo also:
 https://drive.google.com/file/d/1DoMj5CAfjCgOVVMpDqr8VTJCULrFw-4c/view?usp=share_link
 
 Here is a link to the Hugging Face space:
+
 https://huggingface.co/spaces/RyanS974/525GradioApp
 
 # Introduction
