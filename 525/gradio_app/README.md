@@ -17,7 +17,7 @@ Check out the configuration reference at https://huggingface.co/docs/hub/spaces-
 
 This is my Gradio App homework assignment User Guide.  The beginning of this markdown file is of the Huggingface generated part, where it says title, emoji, sdk, etc...  I am not sure if that is referenced or needed actually, but I left it in the file, as what is apparently configuration information related to the link it generated.
 
-Here is a link to the video demo also: 
+Here is a link to the video demo: 
 
 https://drive.google.com/file/d/1DoMj5CAfjCgOVVMpDqr8VTJCULrFw-4c/view?usp=share_link
 
