@@ -43,6 +43,8 @@ I will quote the assignment prompt and make a few comments:
 
 The app is fairly stable and has a decent amount of features, although it is not a fully production-ready application.  I believe with more time I could refine this, but a good amount of time was put into it to get it to an acceptable state for the assignment requirements.  One of the things is I would recommend restarting the space if you want to load another dataset and have the results built through the analysis options and displayed in the summary tab for you to send to an LLM if you want.  The visuals tab is more of an example of some hard-coded results, with the n-grams option of the anlysis tab having the dynamic graphing.  That option will display graphs based on the dataset, including a created dataset.  I could have added more graphs to other options, including the RoBERTa classifier, but felt the current state is of acceptable features.
 
+Generative AI statement: I mainly use generative ai as a reference and dictionary of sorts. I lookup functions, classes, libraries, etc, and also get example usages of them, in regard to the reference aspect. The dictionary aspect, or encyclopedia of sorts, is used learning about concepts, or clarifying concepts. I try to be more on the vague side in prompts, not seeking direct solutions, but seeking to understand the concepts or how a library works programmatically.
+
 # Usage
 
 Here is a brief usage guide with screenshots.  I do not go into much detail here, with that saved for the documentation section.
