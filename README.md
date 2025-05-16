@@ -14,6 +14,9 @@
       
 - The main programming languages I am interested in are: Python, Swift, C, and SQL.
 
+- I'm working on a terminal version of a Chatbots app (Ollama LLMs and various online LLMs such as OpenAI, Anthropic, etc...)
+  - There is planned to be a free open-source version available on PyPI and a full featured version.
+  - Information will be available on my GitHub Pages page `ryans974.github.io`
 <!--
 **RyanS974/RyanS974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
