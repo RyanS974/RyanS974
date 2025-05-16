@@ -2,15 +2,16 @@
   - Completed first semester (Fall 2024) courses:
     - Advanced AI
     - Machine Learning
-  - In the 2nd (Winter 2025) semester with courses:
+  - Completed second semester (Winter 2025) courses:
     - Advanced Software Engineering
     - Natural Language Processing
-  - The four other planned courses are:
+  - Start (Fall 2025) Year 2 in August 2025:
+    - Software Architecture & Design
+    - Software Testing & Maintenance
+  - (Winter 2026) planned courses are:
     - Deep Learning
     - Software Engineering and AI
-    - Software Architechture and Design
-    - Software Testing and Maintenance
-
+      
 - The main programming languages I am interested in are: Python, Swift, C, and SQL.
 
 - The Python AI libraries I am interested in are: SciKit-Learn, PyTorch, TensorFlow, and HuggingFace Transformers.
