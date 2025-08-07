@@ -7,7 +7,7 @@
     - Natural Language Processing
   - Start (Fall 2025) Year 2 in August 2025:
     - Software Architecture & Design
-    - Software Testing & Maintenance
+    - Foundations of Cybersecurity
   - (Winter 2026) planned courses are:
     - Deep Learning
     - Software Engineering and AI
