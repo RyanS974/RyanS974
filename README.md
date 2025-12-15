@@ -5,10 +5,10 @@
   - Completed second semester (Winter 2025) courses:
     - Advanced Software Engineering
     - Natural Language Processing
-  - Currently in Fall 2025 semester (ends December 5th):
+  - Completed third semester (Fall 2025) courses:
     - Software Architecture & Design
     - Foundations of Cybersecurity
-  - (Winter 2026; starts January 2026) planned courses are:
+  - (Winter 2026; starts January 2026) registered courses are:
     - Software Testing and Maintenance
     - Software Engineering and AI
       
