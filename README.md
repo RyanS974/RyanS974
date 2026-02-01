@@ -1,4 +1,4 @@
-- I'm currently pursuing a Master's of Science degree in Artificial Intelligence, with a concentration in AI and Software Engineering.
+- I'm currently pursuing a Master's of Science degree in Artificial Intelligence at U of M, with a concentration in AI and Software Engineering.
   - Completed first semester (Fall 2024) courses:
     - Advanced AI
     - Machine Learning
