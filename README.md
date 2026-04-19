@@ -28,6 +28,8 @@ On technology you program artificial intelligence using Python; Specifically an 
 
 My Bachelor's degree is in Accounting (a B.S. in Business with an Accounting concentration) and my current plan is to study for and take the CPA Exam(s). My time frame is to complete it in a year (by about May of 2027), in the following standard order for the chosen discipline: F.A.I.R. (FAR, AUD, ISC, REG).
 
+An interesting note on My Master's degree: The requirements for the U of M Software Engineering with an AI concentration degree is the same as the degree I have. The pre-requisites included.
+
 <!--
 **RyanS974/RyanS974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
