@@ -26,7 +26,7 @@ On technology you program artificial intelligence using Python; Specifically an 
 - Technology -> Programming -> Python -> AI (Accounting Information?)
 - Accounting
 
-My Bachelor's degree is in Accounting (a B.S. in Business with an Accounting concentration) and my current plan is to study for and take the CPA Exam(s). My time frame is to complete it in a year (by about May of 2027), in the following standard order for the chosen discipline: F.A.I.R. (FAR, AUD, ISC, REG).
+My Bachelor's degree is in Accounting (a B.S. in Business with an Accounting concentration) and my current plan is to study for and take the CPA Exam(s). My time frame is to complete it in a year (by about May of 2027), in the following standard order for the chosen discipline: F.A.I.R. (FAR, AUD, ISC, REG). ISC is Information Systems and Controls.
 
 An interesting note on My Master's degree: The requirements for the U of M Software Engineering with an AI concentration degree is the same as the degree I have. The pre-requisites included.
 
