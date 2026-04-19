@@ -26,6 +26,8 @@ On technology you program artificial intelligence using Python; Specifically an 
 - Technology -> Programming -> Python -> AI (Accounting Information?)
 - Accounting
 
+My Bachelor's degree is in Accounting (a B.S. in Business with an Accounting concentration) and my current plan is to study for and take the CPA Exam(s). My time frame is to complete it in a year (by about May of 2027), in the following standard order for the chosen discipline: F.A.I.R. (FAR, AUD, ISC, REG).
+
 <!--
 **RyanS974/RyanS974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
