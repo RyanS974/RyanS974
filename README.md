@@ -1,4 +1,4 @@
-- I'm currently pursuing a Master's of Science degree in Artificial Intelligence at U of M, with a concentration in AI and Software Engineering.
+- I just finished a Master's of Science degree in Artificial Intelligence at U of M, with a concentration in AI and Software Engineering.
   - Completed first semester (Fall 2024) courses:
     - Advanced AI
     - Machine Learning
@@ -8,11 +8,23 @@
   - Completed third semester (Fall 2025) courses:
     - Software Architecture & Design
     - Foundations of Cybersecurity
-  - Winter 2026 courses:
+  - Completed fourth semester (Winter 2026) courses:
     - Software Testing and Maintenance
     - Software Engineering and AI
       
 - The main programming languages I am interested in are: Python, Swift, C, and SQL.
+
+- The main topics I am interested in are:
+  - Technology -> Programming -> Python -> Artificial Intelligence -> Accounting
+
+I will comment on the topics hierarchy I just listed. The means to the end there is Accounting. You program technology (Hardware, although software can be viewed as technology also) with a programming language, specifically here speaking of Python, using your intelligence or Artificial Intelligence (the programs can also be viewed as AI), with the main actual program here (further going from a general AI view to a specific concept) being Accounting.
+
+How about another phrasing of it: Using the Python programming language, and Intelligence / Artificial Intelligence, an accounting program can be programmed on hardware technology (computers).
+
+On technology you program artificial intelligence using Python; Specifically an accounting program. Intelligence or artificial intelligence was used to program the artificial intelligence accounting program.
+
+- Technology -> Programming -> Python -> AI (Accounting Information?)
+- Accounting
 
 <!--
 **RyanS974/RyanS974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
