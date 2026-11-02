@@ -1,7 +1,7 @@
 - The main programming languages I am interested in are: Python, Swift, C, and SQL.
-
 - The main topics I am interested in are:
   - Technology -> Programming -> Python -> Artificial Intelligence -> Accounting
+- Agentic Coding with OpenCode and usually GLM 5.3 or DeepSeek 
 
 <!--
 **RyanS974/RyanS974** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
